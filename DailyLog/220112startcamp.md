@@ -56,7 +56,7 @@ Q. 왜 굳이 add와 commit 두 개의 과정을 거쳐야 할까?
 
 ​	working directory(working tree) / staging area(index) / repository(commit 기록)
 
-
+- 커밋 메시지를 변경하는 명령어(git commit --amend) 사용하는 경우 변경되니 주의하자.
 
 ## status
 
