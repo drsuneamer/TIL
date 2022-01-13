@@ -1,12 +1,12 @@
 # TIL
 
-> Welcome, it's @drsuneamer's TIL
+> Welcome, it's @drsuneamer's Today_I_Learned :)
 
-## [DailyLog](./DailyLog)
+## [daily_log](./daily_log)
 
 can see each steps I've taken each day
 
-## [Maintopics](./MainTopics)
+## [main_topics](./main_topics)
 
 notes that I've organized for each topic
 
