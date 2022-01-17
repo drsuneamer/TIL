@@ -10,3 +10,6 @@ can see each steps I've taken each day
 
 notes that I've organized for each topic
 
+1) Git
+2) Markdown
+3) Python (01/17/2022~)

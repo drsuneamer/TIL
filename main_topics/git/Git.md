@@ -149,7 +149,7 @@ origin https://github.com/edutak/first.git (push)
 
 ```bash
 $ git remote add <원격저장소이름> <url>
-$ git remote add origin https://https.github.com/username/repository.git
+$ git remote add origin https://github.com/username/repository.git
 ```
 
 - `origin` : 일반적으로 많이 활용되는 원격저장소 이름
@@ -251,4 +251,4 @@ $ git clone https://github.com/username/repository.git
 
 - fetch vs pull
   - fetch: 받아오기만 한다
-  - pull: fetch + merge
+  - pull: fetch + mergegit 
