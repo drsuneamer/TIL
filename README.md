@@ -4,7 +4,7 @@
 
 
 
-### 📂 [python](./1. python)
+### 📂 [python](./1_python)
 
 on my way studying programming language _ PYTHON
 
@@ -24,7 +24,7 @@ on my way studying programming language _ PYTHON
 
 
 
-### 📂 [web](./2. web)
+### 📂 [web](./2_web)
 
 ​	📑  01. HTML & CSS
 
@@ -32,7 +32,7 @@ on my way studying programming language _ PYTHON
 
 
 
-### 📂 [algorithm](./3. algorithm)
+### 📂 [algorithm](./3_algorithm)
 
 ​	📑 01. Array 1
 
@@ -46,7 +46,7 @@ on my way studying programming language _ PYTHON
 
 ​	
 
-### 📂 [extra](./4. extra)
+### 📂 [extra](./4_extra)
 
 overall studies on IT
 
