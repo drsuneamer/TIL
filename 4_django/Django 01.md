@@ -692,3 +692,12 @@ def dinner(request):
     - 대다수의 동적 웹사이트는 공통 header, footer, navbar 같은 사이트 공통 디자인을 갖는다.
     - Django 템플릿 시스템은 이러한 요소를 한 곳에 저장하기 쉽게 하여 중복 코드를 없애야 한다.
     - 이것이 템플릿 상속의 기초가 되는 철학이다.
+
+
+
+## HTML Form
+
+- HTML "form" element
+  - 웹에서 사용자 정보를 입력하는 여러 방식(text, button, checkbox, file, hidden, image, password, radio, reset, submit)을 제공하고, 사용자로부터 할당된 데이터를 서버로 전송하는 역할을 담당
+  - 핵심 속성(attribute)
+    - `action` : 입력 데이터가 전송될 URL 지정
