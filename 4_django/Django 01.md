@@ -1,6 +1,6 @@
 # Django 01
 
-> [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022030210053672900/index.html)  2022-03-02
+> Django The Web Framework  :: [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022030210053672900/index.html)  2022-03-02
 
 - [Django 공식 문서](https://docs.djangoproject.com/en/4.0/)
 
@@ -91,7 +91,7 @@
 
   - Django는 <u>MTV Pattern</u>이라고 함
 
-    model-template-view
+    `model-template-view`
 
     특별한 이유는 없다..! 같은 기능이지만 명칭이 다름
 
@@ -697,7 +697,393 @@ def dinner(request):
 
 ## HTML Form
 
-- HTML "form" element
+- **HTML "form" element**
   - 웹에서 사용자 정보를 입력하는 여러 방식(text, button, checkbox, file, hidden, image, password, radio, reset, submit)을 제공하고, 사용자로부터 할당된 데이터를 서버로 전송하는 역할을 담당
   - 핵심 속성(attribute)
     - `action` : 입력 데이터가 전송될 URL 지정
+    - `method` : 입력 데이터 전달 방식 지정
+
+
+
+- **HTML "input" element**
+  - 사용자로부터 데이터를 입력 받기 위해 사용
+  - type 속성에 따라 동작 방식이 달라짐
+  - 핵심 속성(attribute)
+    - `name`
+    - 중복 가능, 양식을 제출했을 때 name이라는 이름에 설정된 값을 넘겨서 값을 가져올 수 있음
+    - 주요 용도는 GET/POST 방식으로 서버에 전달하는 파라미터(name은 key, value는 value)로 매핑하는 것
+    - GET 방식에서는 URL에서 `?key=value&key=value` 형식으로 데이터를 전달함
+
+
+
+- **HTML "label" element**
+  - 사용자 인터페이스 항목에 대한 설명(caption)을 나타냄
+  - label을 input 요소와 연결하기
+    1. input에 id 속성 부여
+    2. label에는 input의 id와 동일한 값의 for 속성이 필요
+  - label과 input 요소 연결의 주요 이점
+    - 시각적인 기능 뿐만 아니라 화면 리더기에서 label을 읽어 사용자가 입력해야 하는 텍스트가 무엇인지 더 쉽게 이해할 수 있도록 돕는 프로그래밍적 이점도 있음
+    - label을 클릭해서 input에 초점(focus)를 맞추거나 활성화(activate)시킬 수 있음
+
+
+
+- **HTML "for" attribute**
+  - for 속성의 값과 일치하는 id를 가진 문서의 첫 번째 요소를 제어
+    - 연결된 요소가 labelabel elements인 경우 이 요소에 대한 labeled control이 됨
+  - "labelabel elements"
+    - label 요소와 연결할 수 있는 요소
+    - button, input(not hidden type), select, textarea ...
+
+
+
+- **HTML "id" attribute**
+  - 전체 문서에서 고유(must be unique)해야 하는 식별자를 정의
+  - 사용 목적
+    - linking, scripting, styling 시 요소를 식별
+
+
+
+- HTTP
+
+  - HyperText Transfer Protocol
+
+  - 웹에서 이루어지는 모든 데이터 교환의 기초
+
+  - 주어진 리소스가 수행할 작업을 나타내는 request methods를 정의
+
+  - HTTP request method 종류
+
+    - GET, POST, PUT, DELETE ...
+
+      
+
+### -`GET`
+
+- 서버로부터 정보를 조회하는 데 사용
+- 데이터를 가져올 때만 사용해야 함
+- 데이터를 서버로 전송할 때 body가 아닌 Query String Parameters를 톻해 전송
+- 우리는 서버에 요청을 하면 HTML 문서 한 장을 받는데, 이때 사용하는 요청의 방식이 GET
+
+
+
+- [실습] Throw & Catch
+
+  - Throw
+
+    ```python
+    # urls.py
+    
+    urlpatterns = [
+        ...,
+        path('throw/', views.throw),
+    ]
+    ```
+
+    ```python
+    # views.py
+    
+    def throw(request):
+        return render(request, 'throw.html')
+    ```
+
+    ```django
+    <!-- throw.html -->
+    {% extends 'base.html' %}
+    
+    {% block content %}
+    	<h1>Throw</h1>
+    	<form action="#" method="#">
+        	<label for="message">Throw</label>
+            <input type="text" id="message" name="message">
+            <input type="submit">
+    	</form>
+    {% endblock %}
+    ```
+
+  - Catch
+
+    ```python
+    # urls.py
+    
+    urlpatterns = [
+        ...,
+        path('catch/', views.catch),
+    ]
+    ```
+
+    ```python
+    # views.py
+    
+    def catch(request):
+        message = request.GET.get('message')
+        context = {
+            'message': message,
+        }
+        return render(request, 'catch.html', context)
+    ```
+
+    ```django
+    <!-- catch.html -->
+    {% extends 'base.html' %}
+    
+    {% block content %}
+    	<h1>Catch</h1>
+    	<h2>여기서 {{ message }}를 받았어!</h2>
+    	<a href="/throw/">다시 던지러 가기</a>
+    {% endblock %}
+    ```
+
+    
+
+## URL
+
+- **Django URLS**
+  - Dispatcher(발송자, 운항 관리자)로서의 URL
+  - 웹 애플리케이션은 URL을 통한 클라이언트의 요청에서부터 시작됨
+  
+  
+
+### - **Variable Routing**
+
+- URL 주소를 변수로 사용하는 것
+
+- URL의 일부를 변수로 지정하여 view 함수의 인자로 넘길 수 있음
+
+- 즉, 변수 값에 따라 하나의 path()에 여러 페이지를 연결 시킬 수 있음
+
+  - 사용 예시
+
+    - ```python
+      path('accounts/user/<int:user_pk>/', ...)
+      ```
+
+      - `accounts/user/1` -> (1번 user 관련 페이지)
+      - `accounts/user/2` -> (2번 user 관련 페이지)
+
+
+
+- **URL Path converters**
+
+  ```python
+  path('hello/<str:name>/', views.hello)
+  ```
+
+  - `str`
+    - '/'를 제외하고 비어 있지 않은 모든 문자열과 매치
+    - 작성하지 않을 경우 기본값
+  - `int`
+    - 0 또는 양의 정수와 매치
+  - `slug`
+    - ASCII 문자 또는 숫자, 하이픈 및 밑줄 문자로 구성된 모든 슬러그 문자열과 매치
+    - ex. 'building-your-1st-django-site'
+  - `uuid`
+  - `path`
+
+
+
+- [실습] Variable routing
+
+  ```python
+  # urls.py
+  
+  urlpatterns = [
+      ...,
+      # path('hello/<str:name>/', views.hello),
+      path('hello/<name>', views.hello),
+  ]
+  ```
+
+  ```python
+  # views.py
+  
+  def hello(request, name):
+      context = {
+          'name': name,
+      }
+      return(render, 'hello.html', context)
+  ```
+
+  ```django
+  <!-- hello.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+  	<h1>만나서 반가워요, {{ name }}님!</h1>
+  {% endblock %}
+  ```
+
+  
+
+- Add URL mapping
+
+  - app의  view 함수가 많아지면서 사용하는 path()또한 많아지고, app 또한 많이 작성되기 때문에 프로젝트의 urls.py에서 모두 관리하는 것은 프로젝트 유지보수에 좋지않음
+  - 이제는 각 apps에 urls.py를 작성하게 됨
+  - pages 앱 생성 및 등록 후 url 작성 - 이렇게도 가능하지만...
+
+  ```python
+  # firstpjt/urls.py
+  
+  from articles import views as articles_views
+  from pages import views as pages_views
+  
+  urlpatterns = [
+      ...,
+      path('pages-index', pages_views.index),
+  ]
+  ```
+
+  - 각각의 app 안에 urls.py을 생성하고 프로젝트 urls.py에서 각 앱의 urls.py 파일로 <u>URL 매핑을 위탁</u>
+
+  ```python
+  # articles/urls.py
+  
+  from django.urls import path
+  from . import views
+  
+  urlpatterns = [
+      path('index/', views.index),
+      path('greeting/', views.greeting),
+      path('dinner/', views.dinner),
+      path('hello/<str:name>/', views.hello),
+      path('dtl-practice/', views.dtl_practice),
+      path('throw/', views.throw),
+      path('catch/', views.catch)
+  ]
+  ```
+
+  ```python
+  # pages/urls.py
+  
+  from django.urls import path
+  
+  urlpatterns = [
+      
+  ]
+  ```
+
+  
+
+- Including other URLconfs
+
+  - urlpattern은 언제든지 다른 URLconf 모듈을 포함(include)할 수 있음
+  - `include()`
+    - 다른 URLconf(app1/urls.py)들을 참조할 수 있도록 도움
+    - 함수 include()를 만나게 되면, URL의 그 시점까지 일치하는 부분을 잘라내고, 남은 문자열 부분을 후속 처리를 위해 include된 URLconf로 전달
+  - django는 명시적 상대경로(**from** .module **import** ..)를 권장
+
+  ![image-20220307142820140](Django 01.assets/image-20220307142820140.png)
+
+  ![image-20220307142841457](Django 01.assets/image-20220307142841457.png)
+
+  ![image-20220307223506258](Django 01.assets/image-20220307223506258.png)
+
+
+
+- Naming URL patterns
+
+  ```python
+  path('index/', views.index, name='index')
+  ```
+
+  ```django
+  <a href="{% url 'index' %}">메인 페이지</a>
+  ```
+
+  - 이제는 링크에 url을 직접 작성하는 것이 아니라 path() 함수의 name 인자를 정의해서 사용
+  - Django Template Tag 중 하나인 url 태그를 사용해서 path() 함수에 작성한 name을 사용할 수 있음
+  - url 설정에 정의된 특정한 경로들의 의존성을 제거할 수 있음
+
+
+
+- Naming URL patterns 적용
+
+  - the 'name' value as called by the `{% url %}` template tag
+
+  ```python
+  # articles/urls.py
+  
+  urlpatterns = [
+      path('index/', views.index, name='index'),
+  	path('greeting/', views.greeting, name='greeting'),
+      path('dinner/', views.dinner, name='dinner'),
+      path('hello/<str:name>/', views.hello, name='hello'),
+      path('throw/', views.throw, name='throw'),
+      path('catch/', views.catch, name='catch'),
+  ]
+  ```
+
+  
+
+
+
+- url template tag
+
+  ```django
+  {% url '' %}
+  ```
+
+  - 주어진 URL 패턴 이름 및 선택적 매개 변수와 일치하는 절대 경로 주소를 반환
+  - 템플릿에 URL을 하드 코딩하지 않고도 DRY 원칙을 위반하지 않으면서 링크를 출력하는 방법
+
+
+
+- [실습] url tag 적용하기
+
+  ```django
+  <!-- index.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+  	<h1>만나서 반가워요!</h1>
+  	<a href="{% url 'greeting' %}">greeting</a>
+  	<a href="{% url 'dinner' %}">dinner</a>
+  	<a href="{% url 'dtl_practice' %}">dtl_practice</a>
+  	<a href="{% url 'throw' %}">throw</a>
+  {% endblock %}
+  
+  <!-- dinner, dtl_practice, greeting, throw.html -->
+  
+  <a href="{% url 'index' %}">뒤로</a>
+  ```
+
+  ```django
+  <!-- throw.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+  	<h1>Throw</h1>
+  	<form action="{% url 'catch' %}" method="GET">
+          ...
+  	</form>
+  
+  	<a href="{% url 'index' %}">뒤로</a>
+  {% endblock %}
+  ```
+
+  ```django
+  <!-- catch.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+  	<h1>Catch</h1>
+  	<h2>여기서 {{ message }}를 받았어!</h2>
+  	<a href="{% url 'throw' %}">다시 던지러 가기</a>
+  {% endblock %}
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
