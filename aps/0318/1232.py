@@ -1,19 +1,21 @@
-def in_order(v):
+def f(v):
     global result
+    op = ['+', '-', '/', '*']
     if v:
-        in_order(ch1[v])
-        for i in range(N):
-            if type(val[v]) == int:
-                if ch1[i] == v:
-                    if type(val[ch2[i]]) == int:
-                        result += '('
-        result += str(val[v])
-        for i in range(N):
-            if type(val[v]) == int:
-                if ch2[i] == v:
-                    if type(val[ch1[i]]) == int:
-                        result += ')'
-        in_order(ch2[v])
+        f(ch1[v])
+        f(ch2[v])
+        if val[v] in op:
+            if val[v] == '+':
+                result[v] = result[ch1[v]] + result[ch2[v]]
+            if val[v] == '-':
+                result[v] = result[ch1[v]] - result[ch2[v]]
+            if val[v] == '*':
+                result[v] = result[ch1[v]] * result[ch2[v]]
+            if val[v] == '/':
+                result[v] = result[ch1[v]] / result[ch2[v]]
+        else:
+            result[v] = val[v]
+
 
 
 for tc in range(1, 11):
@@ -21,7 +23,7 @@ for tc in range(1, 11):
     val = [0] * (N+1)     # 각 노드에 저장된 값
     ch1 = [0] * (N+1)
     ch2 = [0] * (N+1)
-    result = ''
+    result = [0] * (N+1)    # 계산 결과 저장할 값
     for i in range(N):
         lst = list(input().split())
         if len(lst) == 2:
@@ -32,5 +34,5 @@ for tc in range(1, 11):
             ch1[int(lst[0])] = int(lst[2])
             ch2[int(lst[0])] = int(lst[3])
 
-    in_order(1)
-    print(int(eval(result)))
+    f(1)
+    print(f'#{tc} {int(result[1])}')
