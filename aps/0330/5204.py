@@ -33,7 +33,7 @@ def merge(L, R):
             else:
                 result.append(R[j])
                 j += 1
-        elif i < len(L):
+        elif i < len(L):    # 왼쪽 리스트에만 남아있는 경우 차례대로 다 넣기
             result.append(L[i])
             i += 1
         elif j < len(R):

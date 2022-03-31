@@ -9,3 +9,14 @@ arr.sort(key = lambda x:x[1])
 arr = [[1, 2], [2, 3], [0, 4]]
 ```
 
+
+
+### 소수점 이하 자릿수 맞추기
+
+>https://outofgreed.tistory.com/312
+
+```python
+score = '{:.2f}'.format(round(x,2))
+# 8.50 (두번째 자리 채워짐)
+```
+

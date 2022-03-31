@@ -46,7 +46,17 @@ on my way studying programming language _ PYTHON
 
 ​	05. Stack 2
 
-​	
+​	06. Queue
+
+​	07. Tree
+
+​	08. Computation Thinking
+
+​	09. Start
+
+​	10. Exhaustive Search & Greedy
+
+​	11. Divide and Conquer & Backtracking
 
 
 
@@ -72,6 +82,16 @@ overall studies on IT
 
   		4. Decomposition, Abstraction and Function (2022 / 02 / 02)
   	   - What's the difference between *print* and *return*?
+
+​	📋 Discrete Mathematics
+
+​		- 이산수학 기본
+
+​	📋 Tools for Algorithm
+
+​	📋 DFS & BFS
+
+​	📋 code templates
 
 
 
