@@ -62,7 +62,7 @@ $ python manage.py runserver
   - Asynchronous Server Gateway Interface
   - 장고 어플리케이션이 비동기식 웹 서버와 연결 및 소통하는 것을 도움
 - `manage.py`
-  - Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인 유틸리티
+  - Django 프로젝트와 다양한 방법으로상호작용 하는 커맨드라인 유틸리티
 
 
 <br>
@@ -207,6 +207,7 @@ $ python manage.py startapp articles
   from django.urls import path
   from articles import views
   
+  
   urlpatterns = [
       path('admin/', admin.site.urls),
       path('index/', views.index),
@@ -220,7 +221,7 @@ $ python manage.py startapp articles
 
 - HTTP 요청을 수신하고 HTTP 응답을 반환하는 함수 작성
 - Model을 통해 요청에 맞는 필요 데이터에 접근
-- template에게 HTTP 응답 서식을 맡김
+- tempate에게 HTTP 응답 서식을 맡김
 
 ```python
 # articles/views.py
