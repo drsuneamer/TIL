@@ -1,6 +1,6 @@
 # Django 03
 
-> [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022040609230991300/index.html)  2022-04-06
+> [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022040710213497700/index.html)  2022-04-06
 
 
 
@@ -518,11 +518,9 @@
   ```django
   <!-- articles/create.html -->
   
-  <h1>CREATE</h1>
-  ...
-  <hr>
-  <form 
-  {% csrf_token %}
+  <h2>1. Rendering fields manually</h2>
+  <form action="{% url 'articles:create' %}" method="POST">
+  	{% csrf_token %}
       <div>
         {{ form.title.errors }}
         {{ form.title.label_tag }}
@@ -534,8 +532,176 @@
         {{ form.content }}
       </div>
       <input type="submit">
-    </form>
-    <hr>
+  </form>
+  ```
+  
+  
+
+- Looping over the form's fields
+
+  ```django
+  <!-- articles/create.html -->
+  
+  <h2>2. Looping over the form's fields</h2>
+  <form action="{% url 'articles:create' %}" method="POST">
+      {% csrf_token %}
+      {% for field in form %}
+      	{{ field.errors }}
+      	{{ field.label_tag }}
+      	{{ field }}
+      {% endfor %}
+      <input type="submit">
+  </form>
   ```
 
   
+
+- Bootstrap과 함께 사용하기
+
+  1. Bootstrap class with widgets
+
+  2. Django Bootstrap 5 Library
+
+     
+
+- **Bootstrap Form class**
+
+  - Bootstrap Forms 사용하기
+
+    https://getbootstrap.com/docs/5.1/forms/overview/
+
+  - 핵심 클래스
+
+    - form-control
+
+  - Bootstrap Form의 핵심 class를 widget에 작성
+
+    ```python
+    # forms.py
+    
+    class ArticleForm(forms.ModelForm):
+        title = forms.CharField(
+        	label = '제목', 
+        	widget = forms.TextInput(
+            	attrs = {
+                    'class': 'my-title form-control',
+                    'placeholder': 'Enter the title',
+            }),
+        )
+        content = forms.CharField(
+        	label = '내용',
+            widget = forms.Textarea(
+            	attrs = {
+                    'class': 'my-content form-control',
+                    'placeholder': 'Enter the content', 
+                    'rows': 5,
+                    'cols': 50,
+            }),
+            error_messages = {
+                'required': 'Please enter your content'
+            }
+        )
+    ```
+
+  - Bootstrap Form 적용 결과
+
+    ![image-20220407164042641](Django 03.assets/image-20220407164042641.png)
+
+  - 에러 메시지 with bootstrap alert 컴포넌트
+
+    ```django
+    <!-- articles/create.html -->
+    
+    <h2>2. Looping over the form's fields</h2>
+    <form action="{% url 'articles:create' %}" method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+        	{% if field.errors %}
+        		{% for error in field.errors %}
+        			<div class="alert alert-warning">{{ error|escape }}</div>
+        		{% endfor %}
+        	{% endif %}
+        	{{ field.label_tag }}
+        	{{ field }}
+        {% endfor %}
+        <input type="submit">
+    </form>
+    ```
+
+  - 에러 메시지 with bootstrap alert 컴포넌트 결과
+
+    ![image-20220407164311547](Django 03.assets/image-20220407164311547.png)
+
+
+
+- Django Bootstrap Library
+
+  - django-bootstrap v5
+
+    - form class에 bootstrap을 적용시켜주는 라이브러리
+
+      ```bash
+      $ pip install django-bootstrap-v5
+      ```
+
+      ```python
+      # settings.py 
+      
+      INSTALLED_APPS = [
+          ...
+          'bootstrap5',
+          ...
+      ]
+      ```
+
+  - 패키지 목록 업데이트
+
+    ```bash
+    $ pip freeze > requirements.txt
+    ```
+
+  - 설치한 라이브러리 적용해보기
+
+    ```django
+    <!-- base.html -->
+    
+    {% load bootstrap5 %}
+    
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% bootstrap_css %}
+      <title>Document</title>
+    </head>
+    <body>
+      <div class="container">
+          {% block content %}
+          {% endblock %}
+        </div>
+        {% bootstrap_javascript %}
+    </body>
+    </html>
+    ```
+
+    ```django
+    <!-- article/update.html -->
+    
+    {% extends 'base.html' %}
+    {% load bootstrap5 %}
+    
+    {% block content %}
+      <h1>UPDATE</h1>
+      <form action="{% url 'articles:update' article.pk %}" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form layout='horizontal' %}
+        {% buttons submit="Submit" reset="Cancel" %}{% endbuttons %}
+      </form>
+      <hr>
+      <a href="{% url 'articles:detail' article.pk %}">[back]</a>
+    {% endblock %}
+    ```
+
+    
+

@@ -27,7 +27,7 @@ $ source venv/Scripts/activate
 # .gitignore
 
 venv/
-__pychche__/
+__pycache__/
 ```
 
 <img src="Django 프로젝트 시작.assets/image-20220308100940143.png" alt="image-20220308100940143" style="zoom:150%;" />
@@ -75,6 +75,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
+
+
+
+### 날짜 및 시간
+
+```python
+LANGUAGE_CODE = 'ko-KR'
+
+TIME_ZONE = 'Asia/Seoul'
+```
+
+
 
 
 
