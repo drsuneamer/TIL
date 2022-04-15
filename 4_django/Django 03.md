@@ -127,7 +127,7 @@
 
 
 
-- Form field 및 widget 응용
+- **Form field 및 widget 응용**
 
   ```python
   from django import forms
@@ -252,7 +252,7 @@
 
 
 
-- create view 함수 구조 변경
+- **create view 함수 구조 변경**
 
   - new view 함수, url path 삭제
   
@@ -320,58 +320,7 @@
 
 
 
-- Widgets 활용하기
-
-  - Django의 HTML input element 표현
-
-  - HTML 렌더링을 처리
-
-  - 2가지 작성 방식을 가짐
-
-    - widgets - 첫번째 방식
-
-      ```python
-      # articles/forms.py
-      
-      class ArticleForm(forms.ModelForm):
-          
-          class Meta:
-              Model = Article
-              fields = '__all__'
-              widgets = {
-                  'title': forms.TextInput(arrts={
-                      'class':'my-title',
-                      'placeholder': 'Enter the title', 
-                      'maxlength': 10,
-                  	}
-           		)
-              }
-      ```
-
-    - widgets - 두번째 방식 (권장)
-
-      ```python
-      # articles/forms.py
-      
-      class ArticleForm(forms.ModelForm):
-      	title = form.CharField(
-          	label = '제목',
-              widget=forms.TextInput(
-              	attrs = {
-                      'class': 'my-title',
-                      'placeholder': 'Enter the title',
-                  }
-              ),
-          )           
-              
-          class Meta:
-              model = Article
-              fields = '__all__'
-      ```
-
-      ![image-20220406203816854](Django 03.assets/image-20220406203816854.png)
-
-- DELETE
+- **DELETE**
 
   - DELETE 로직 작성
 
@@ -397,7 +346,7 @@
 
 
 
-- UPDATE
+- **UPDATE**
 
   - update view 함수 작성 (edit path & edit view 함수 삭제)
 
@@ -463,13 +412,7 @@
 
   
 
-- forms.py 파일 위치
-  - Form 클래스는 forms.py뿐만 아니라 다른 어느 위치에 두어도 상관없음
-  - 하지만 되도록 `app폴더/forms.py`에 작성하는 것이 일반적인 구조
-
-
-
-- form & ModelForm 비교
+- **form & ModelForm 비교**
   - Form
     - 어떤 Model에 저장해야 하는지 알 수 없으므로 유효성 검사 이후 cleaned_data 딕셔너리를 생성
     - cleaned_data 딕셔너리에서 데이터를 가져온 후 .save() 호출해야 함
@@ -480,7 +423,7 @@
 
 
 
-- [참고] cleaned_data 구조 예시
+- **[참고] Form을 사용했을 경우 (cleaned_data 구조 예시)**
 
   ```python
   def create(request):
@@ -501,9 +444,69 @@
       return render(request, 'articles/create.html', context)
   ```
 
+
+
+
+- **forms.py 파일 위치**
+  - Form 클래스는 forms.py뿐만 아니라 다른 어느 위치에 두어도 상관없음
+  - 하지만 되도록 `app폴더/forms.py`에 작성하는 것이 일반적인 구조
+
+
+
+- **Widgets 활용하기**
+
+  - Django의 HTML input element 표현
+
+  - HTML 렌더링을 처리
+
+  - 2가지 작성 방식을 가짐
+
+    - widgets - 첫번째 방식
+
+      ```python
+      # articles/forms.py
+      
+      class ArticleForm(forms.ModelForm):
+          
+          class Meta:
+              Model = Article
+              fields = '__all__'
+              widgets = {
+                  'title': forms.TextInput(arrts={
+                      'class':'my-title',
+                      'placeholder': 'Enter the title', 
+                      'maxlength': 10,
+                  	}
+           		)
+              }
+      ```
+
+    - widgets - 두번째 방식 (권장)
+
+      ```python
+      # articles/forms.py
+      
+      class ArticleForm(forms.ModelForm):
+      	title = form.CharField(
+          	label = '제목',
+              widget=forms.TextInput(
+              	attrs = {
+                      'class': 'my-title',
+                      'placeholder': 'Enter the title',
+                  }
+              ),
+          )           
+              
+          class Meta:
+              model = Article
+              fields = '__all__'
+      ```
+
+      ![image-20220406203816854](Django 03.assets/image-20220406203816854.png)
+
   
 
-
+  
 
 ## Rendering fields manually
 
@@ -634,7 +637,7 @@
 
 
 
-- Django Bootstrap Library
+- **Django Bootstrap Library**
 
   - django-bootstrap v5
 

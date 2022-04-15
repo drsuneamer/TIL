@@ -1,12 +1,12 @@
 # Django Model
 
->[강의자료]()
+>[강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022030811155803700/index.html)
 
 
 
 ## Model
 
-- Model
+- **Model**
   - 단일한 데이터에 대한 정보를 가짐	
     - 사용자가 저장하는 데이터들의 필수적인 필드들과 동작들을 포함
   - 저장된 데이터베이스의 구조(layout)
@@ -15,10 +15,10 @@
 
 
 
-- Database
-  - 데이터베이스(DB)
+- **Database**
+  - `데이터베이스(DB)`
     - 체계화된 데이터의 모임
-  - 쿼리(Query)
+  - `쿼리(Query)`
     - 데이터를 조회하기 위한 명령어
     - 조건에 맞는 데이터를 추출하거나 조작하는 명령어
     - "Query를 날린다" → DB를 조작한다
@@ -26,11 +26,11 @@
 
 
 - Database의 기본 구조
-  - 스키마(Schema)
+  - `스키마(Schema)`
     - 데이터베이스에서 자료의 구조, 표현 방법, 관계 등을 정의한 구조(structure)
-  - 테이블(Table)
-    - 열(column): 필드(field) or 속성
-    - 행(row): 레코드(record) or 튜플
+  - `테이블(Table)`
+    - `열(column)`: 필드(field) or 속성
+    - `행(row)`: 레코드(record) or 튜플
 
 ![image-20220320232404098](Django 02.assets/image-20220320232404098.png)
 
@@ -42,7 +42,9 @@
 
 ![image-20220320232446425](Django 02.assets/image-20220320232446425.png)
 
-- Model 정리
+
+
+- **Model 정리**
   - "웹 애플리케이션의 데이터를 구조화하고 조작하기 위한 도구"
 
 
@@ -557,7 +559,8 @@
 
     
 
-- Field lookups
+- **Field lookups**
+  
   - 조회 시 특정 검색 조건을 지정
   - QuerySet 메서드 `filter()`, `exclude()` 및 `get()`에 대한 키워드 인수로 지정됨
   - 사용 예시
@@ -566,7 +569,7 @@
 
 
 
-- QuerySet API
+- **QuerySet API**
   - 데이터베이스 조작을 위한 다양한 QuerySet API methods는 해당 공식문서를 반드시 참고하여 학습할 것
   - https://docs.Djangoproject.com/en/3.2/ref/models/querysets/#queryset-api-reference
 
@@ -576,7 +579,7 @@
 
 ## Admin Site
 
-- Automatic admin interface
+- **Automatic admin interface**
   - 사용자가 아닌 서버의 관리자가 활용하기 위한 페이지
   - Model class를 admin.py에 등록하고 관리
   - django.contrib.auth 모듈에서 제공됨
@@ -637,3 +640,600 @@
 
 ## CRUD with views
 
+- **base 템플릿 작성 및 추가 템플릿 경로 등록**
+
+  ```html
+  <!-- templates/base.html -->
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
+  </html>
+  
+  ```
+
+  ```python
+  TEMPLATES = [
+      {
+          ...
+          'DIRS': [BASE_DIR / 'templates',],
+          ...
+      },
+  ]
+  ```
+
+
+
+- **index 페이지 작성**
+
+  ```python
+  # articles/urls.py
+  
+  from django.urls import path
+  from . import views
+  
+  
+  app_name = 'articles'
+  urlpatterns = [
+      path('', views.index, name='index'),
+  ]
+  ```
+
+  ```python
+  # articles/views.py
+  
+  def index(request):
+      return render(request, 'articles/index.html')
+  ```
+
+  ```django
+  <!-- templates/articles/index.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+   	<h1 class="text-center">Articles</h1>
+  {% endblock content %}
+  ```
+
+  
+
+- **READ - 전체 게시글 조회**
+
+  ```python
+  # articles/views.py
+  
+  from .models import Article
+  
+  def index(request):
+      articles = Article.objects.all()
+      context = {
+          'articles': articles,
+      }
+      return render(request, 'articles/index.html', context)
+  ```
+
+  ```django
+  <!-- templates/articles/index.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+    <h1>Articles</h1>
+    <hr>
+    {% for article in articles %}
+      <p>글 번호: {{ article.pk }}</p>  
+      <p>글 제목: {{ article.title }}</p>
+      <p>글 내용: {{ article.content }}</p>
+      <hr>
+    {% endfor %}
+  {% endblock content %}
+  ```
+
+  
+
+- **CREATE - New views**
+
+  ```python
+  # articles/urls.py
+  
+  path('new/', views.new, name='new'),
+  ```
+
+  ```python
+  # articles/views.py
+  
+  def new(request):
+      return render(request, 'articles/new.html')
+  ```
+
+  ```django
+  <!-- templates/articles/new.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+    <h1>NEW</h1>
+    <form action="" method="GET">
+      {% csrf_token %}
+      <label for="title">Title: </label>
+      <input type="text" id="title" name="title"><br>
+      <label for="content">Content: </label>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <input type="submit">
+    </form>
+  {% endblock content %}
+  
+  ```
+
+  ```django
+  <!-- templates/articles/index.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+    <h1>Articles</h1>
+    <a href="{% url 'articles:new' %}">NEW</a>
+    ...
+  {% endblock content %}
+  ```
+
+  
+
+- **CREATE - Create views**
+
+  ```python
+  # articles/urls.py
+  
+  path('create/', views.create, name='create'),
+  ```
+
+  ```python
+  # articles/views.py
+  
+  def create(request):
+      title = request.POST.get('title')
+      content = request.POST.get('content')
+  
+      # 1
+      # article = Article()
+      # article.title = title
+      # article.content = content
+      # article.save()
+  
+      # 2
+      article = Article(title=title, content=content)
+      article.save()
+  
+      # 3
+      # Article.objects.create(title=title, content=content)
+  
+      # return redirect('/articles/')
+      return redirect('articles:detail', article.pk)
+  ```
+
+  ```django
+  <!-- templates/articles/new.html -->
+  
+  {% extends 'base.html' %}
+  
+  
+  {% block content %}
+    <h1>NEW</h1>
+    <form action="{% url 'articles:create' %}" method="GET">
+      <label for="title">Title: </label>
+      <input type="text" id="title" name="title"><br>
+      <label for="content">Content: </label>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <input type="submit">
+    </form>
+  {% endblock content %}
+  ```
+
+  ```django
+  <!-- templates/articles/create.html -->
+  
+  {% extends 'base.html' %}
+  
+  {% block content %}
+    <h1>성공적으로 글이 작성되었습니다.</h1>
+  {% endblock content %}
+  ```
+
+  
+
+- **게시글 정렬 순서 변경**
+
+  ```python
+  def index(request):
+      # 1. DB로부터 받은 쿼리셋을 이후에 파이썬이 변경 (Python이 조작)
+      articles = Article.objects.all()[::-1]
+      
+      # 2. 처음부터 내림차순 쿼리셋으로 받음 (DB가 조작)
+      articles = Article.objects.order_by(-pk)
+  ```
+
+  
+
+- **HTTP method**
+
+  - `GET`
+
+    - 특정 리소스를 가져오도록 요청할 때 사용
+    - 반드시 데이터를 가져올 때만 사용해야 함
+    - DB에 변화를 주지 않음
+    - CRUD에서 R 역할을 담당
+
+  - `POST`
+
+    - 서버로 데이터를 전송할 때 사용
+    - 리소스를 생성/변경하기 위해 데이터를 HTTP body에 담아 전송
+    - 서버에 변경사항을 만듦
+    - CRUD에서 C/U/D 역할을 담당
+
+    
+
+- **사이트 간 요청 위조 (Cross-site request forgery)**
+  - 웹 에플리케이션 취약점 중 하나로 사용자가 자신의 의지와 무관하게 공격자가 의도한 행동을 하여 특정 웹페이지를 보안에 취약하게 하거나 수정, 삭제 등의 작업을 하게 만드는 공격 방법
+  - Django는 CSRF에 대항하여 middleware와 template tag를 제공
+  - CSRF라고도 함
+
+
+
+- **CSRF 공격 방어**
+  - Security Token 사용 방식 (CSFR Token)
+    - 사용자의 데이터에 임의의 난수 값을 부여해, 매 요청마다 해당 난수 값을 포함시켜 전송시키도록 함
+    - 이후 서버에서 요청을 받을 때마다 전달된 token 값이 유효한지 검증
+  - 일반적으로 데이터 변경이 가능한 POST, PATCH, DELETE Method 등에 적용 (GET 제외)
+  - Django는 CSFR token 템플릿 태그를 제공
+
+
+
+- **csrf_token template tag**
+
+  ```django
+  {% csrf_token %}
+  ```
+
+  - CSRF 보호에 사용
+  - input type이 hidden으로 작성되며 value는 Django에서 생성한 hash 값으로 설정됨
+  - 해당 태그 없이 요청을 보낸다면 Django 서버는 403 forbidden을 응답
+
+
+
+- **CsrfViewMiddleware**
+
+  ```python
+  # settings.py
+  
+  MIDDLEWARE = [
+      'django.middleware.security.SecurityMiddleware',
+      'django.contrib.sessions.middleware.SessionMiddleware',
+      'django.middleware.common.CommonMiddleware',
+      'django.middleware.csrf.CsrfViewMiddleware',
+      'django.contrib.auth.middleware.AuthenticationMiddleware',
+      'django.contrib.messages.middleware.MessageMiddleware',
+      'django.middleware.clickjacking.XFrameOptionsMiddleware',
+  ]
+  ```
+
+  - CSFR 공격 관련 보안 설정은 settings.py에서 MIDDLEWARE에 작성되어있음
+  - 실제로 요청 과정에서 urls.py 이전에 Middleware의 설정 사항들을 순차적으로 거치며 응답은 반대로 하단에서 상단으로 미들웨어를 적용시킴
+
+
+
+- **[참고] Middleware**
+  - 공통 서비스 및 기능을 애플리케이션에 제공하는 소프트웨어
+  - 데이터 관리, 애플리케이션 서비스, 메시징, 인증 및 API 관리를 주로 미들웨어를 통해 처리
+  - 개발자들이 애플리케이션을 보다 효율적으로 구축할 수 있도록 지원하며, 애플리케이션, 데이터 및 사용자 사이를 연결하는 요소처럼 작동
+
+
+
+- **new 로직 수정**
+
+  ```django
+  <!-- templates/articles/new.html -->
+  
+  {% block content %}
+    <h1>NEW</h1>
+    <form action="{% url 'articles:create' %}" method="POST">
+      {% csrf_token %}
+      ...
+    </form>
+  {% endblock content %}
+  ```
+
+  ```python
+  # articles/views.py
+  
+  def create(request):
+      title = request.POST.get('title')
+      content = request.POST.get('content')
+      
+      article = Article(title=title, content=content)
+      article.save()
+      return render(request, 'articles/create.html')
+  ```
+
+  
+
+- **POST 데이터 확인**
+
+  ![image-20220411224947745](Django 02.assets/image-20220411224947745.png)
+
+
+
+- **게시글 작성 후  index 페이지로 이동하기. 하지만...**
+
+  ```python
+  # articles/views.py
+  
+  def create(request):
+      ...
+      return render(request, 'articles/index.html')
+  ```
+
+  
+
+- **2가지 문제 발생**
+
+  1. 글을 작성 후 index 페이지가 출력되지만 게시글이 조회되지 않음
+  2. URL은 여전히 create에 머물러 있음
+
+  - 단순히 index 페이지만 render되었을 뿐
+    - create view 함수에서 다루고 있는 데이터로 index 페이지가 render됨
+
+
+
+- **Django shortcut function - "`redirect()`"**
+  - 새 URL로 요청을 다시 보냄
+  - 인자에 따라 HttpResponseRedirect를 반환
+  - 브라우저는 현재 경로에 따라 전체 URL 자체를 재구성(reconstruct)
+  - 사용 가능한 인자
+    1. model
+    2. <u>view name</u>: viewname can be URL pattern name or callable view object
+    3. absolute or relative URL
+
+
+
+- **redirect 함수 적용**
+
+  ```python
+  from django.shortcuts import render, redirect
+  
+  def create(request):
+      title = request.POST.get('title')
+      content = request.POST.get('content')
+      article = Article(title=title, content=content)
+      article.save()
+      
+      # return redirect('/articles/')
+      return redirect('articles:detail')
+  ```
+
+  
+
+- **DETAIL**
+
+  ```python
+  # articles/urls.py
+  
+  path('<int:pk>', views.detail, name='detail'),
+  ```
+
+  - 개별 게시글 상세 페이지
+  - 글의 번호(pk)를 활용해서 각각의 페이지를 따로 구현해야 함
+  - 무엇을 활용할 수 있을까? => `Variable Routing`
+
+  ```python
+  # articles/views.py
+  
+  def detail(request, pk):
+      article = Article.objects.get(pk=pk)
+      context = {
+          'article': article,
+      }
+      return render(request, 'articles/detail.html', context)
+  ```
+
+  - 오른쪽 pk는 variable routing을 통해 받은 pk
+
+  - 왼쪽 pk는 DB에 저장된 레코드의 pk (id)
+
+  - Detail 페이지 및 링크 작성
+
+    ```django
+    <!-- templates/articles/detail.html -->
+    
+    {% extends 'base.html' %}
+    
+    {% block content %}
+      <h1>DETAIL</h1>
+      <h3>{{ article.pk }}번째 글</h3>
+      <hr>
+      <p>제목 : {{ article.title }}</p>
+      <p>내용 : {{ article.content }}</p>
+      <p>작성 시각 : {{ article.created_at }}</p>
+      <p>수정 시각 : {{ article.updated_at }}</p>
+      <hr>
+      <a href="{% url 'articles:index' %}">back</a>
+    {% endblock content %}
+    
+    ```
+
+    ```django
+    <!-- templates/articles/index.html -->
+    
+    {% extends 'base.html' %}
+    
+    {% block content %}
+      <h1>Articles</h1>
+      <a href="{% url 'articles:new' %}">NEW</a>
+      <hr>
+      {% for article in articles %}
+        ...
+        <a href="{% url 'articles:detail' article.pk %}">DETAIL</a>
+        <hr>
+      {% endfor %}
+    {% endblock content %}
+    ```
+
+  - redirect 인자 변경
+
+    ```python
+    def create(request):
+        ...
+        return redirect('articles:detail', article.pk)
+    ```
+
+    
+
+- DELETE
+
+  - 모든 글을 삭제하는 것이 아니라 삭제하고자 하는 특정 글을 삭제해야 함
+
+    ```python
+    # articles/views.py
+    
+    def delete(request, pk):
+        article = Article.objects.get(pk=pk)
+    	article.delete()
+    	return redirect('articles:index')
+    ```
+
+    ```python
+    # articles/urls.py
+    
+    path('<int:pk>/delete/', views.delete, name='delete'),
+    ```
+
+    ```django
+    <!-- articles/detail.html -->
+    
+    {% extends 'base.html' %}
+    
+    {% block content %}
+      ...
+      <form action="{% url 'articles:delete' article.pk %}" method="POST">
+        {% csrf_token %}
+        <button class="btn btn-danger">DELETE</button>
+      </form>
+      <a href="{% url 'articles:index' %}">back</a>
+    {% endblock content %}
+    ```
+
+  - HTTP Method POST 시에만 삭제될 수 있도록 조건 작성
+
+    ```python
+    # articles/views.py
+    
+    def delete(request, pk):
+        article = Article.objects.get(pk=pk)
+        if request.method == 'POST':
+            article.delete()
+            return redirect('articles:index')
+        else:
+            return redirect('articles:detail', article.pk)
+    
+    ```
+
+    
+
+- EDIT
+
+  - 수정은 기존에 입력되어 있던 데이터를 보여주는 것이 좋기 때문에 html 태그의 value 속성을 사용
+
+    (textarea 태그는 value 속성이 없으므로 태그 내부 값으로 작성)
+
+    ```python
+    # articles/urls.py
+    
+    path('<int:pk>/edit/', views.edit, name='edit'),
+    ```
+
+    ```python
+    # articles/views.py
+    
+    def edit(request, pk):
+        article = Article.objects.get(pk=pk)
+        context = {
+            'article': article,
+        }
+        return render(request, 'articles/edit.html', context)
+    ```
+
+    ```django
+    <!-- articles/edit.html -->
+    
+    {% extends 'base.html' %}
+    
+    {% block content %}
+      <h1>EDIT</h1>
+      <hr>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="title" value="{{ article.title }}"><br>
+        <label for="content">Content: </label>
+        <textarea name="content" id="content" cols="30" rows="10">{{ article.content }}</textarea>
+        <input type="submit">
+      </form>
+    {% endblock content %}
+    ```
+
+  - detail.html에 edit 링크 작성
+
+    ```django
+    <!-- articles/detail.html -->
+    
+    <a href="{% url'articles:edit' article.pk %}" class="btn btn-primary">EDIT</a>
+    ```
+
+    
+
+- UPDATE
+
+  - create와 마찬가지로 별도의 '글이 수정되었습니다'라는 메시지를 출력하는 template는 필요하지 않음
+
+    ```python
+    # articles/urls.py
+    
+    path('<int:pk>/update/', views.update, name='update'),
+    ```
+
+    ```python
+    # articles/views.py
+    
+    def update(request, pk):
+        article = Article.objects.get(pk=pk)
+        article.title = request.POST.get('title')
+        article.content = request.POST.get('content')
+        article.save()
+        return redirect('articles:detail', article.pk)
+    ```
+
+    ```django
+    {% extends 'base.html' %}
+    
+    
+    {% block content %}
+      <h1>EDIT</h1>
+      <hr>
+      <form action="{% url 'articles:update' article.pk %}" method="POST">
+        {% csrf_token %}
+        ...
+      </form>
+    ```
+
+    

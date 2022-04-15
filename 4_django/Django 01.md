@@ -150,17 +150,6 @@
   $ pip install django==3.2.12
   ```
 
-  
-
-  [참고] LTS
-
-  ​	Long Term Support(장기 지원 버전)
-
-  ​	일반적인 경우보다 장기간에 걸쳐 지원하도록 고안된 소프트웨어 버전
-
-  ​	컴퓨터 소프트웨어의 제품 수명주기 관리 정책
-  
-  ​	배포자는 LTS 확정을 통해 장기적이고 안정적인 지원을 보장함
 
 
 
@@ -182,7 +171,7 @@
 
 
 
-- Django **서버 시작**하기(활성화)
+- **Django 서버 시작하기(활성화)**
 
   ```bash
   $ python manage.py runserver
@@ -190,37 +179,51 @@
 
 
 
-- 메인 페이지 로켓 확인
+- **메인 페이지 로켓 확인**
 
   ![image-20220302101135298](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220302101135298.png)
 
 
 
-- 프로젝트 구조
 
-  - **__ init __.py** (x)
+
+- **[참고] LTS**
+
+  - Long Term Support(장기 지원 버전)
+
+  - 일반적인 경우보다 장기간에 걸쳐 지원하도록 고안된 소프트웨어 버전
+
+  - 컴퓨터 소프트웨어의 제품 수명주기 관리 정책
+  - 배포자는 LTS 확정을 통해 장기적이고 안정적인 지원을 보장함
+
+
+
+- **프로젝트 구조**
+
+  - `__ init __.py` (x)
+    
     - Python에게 이 디렉토리를 하나의 Python 패키지로 다루도록 지시
-
-  - **asgi.py**
+    
+  - `asgi.py`
 
     - Asynchronous Server Gateway Interface
 
     - Django 애플리케이션이 비동기식 웹 서버와 연결 및 소통하는 것을 도움
 
-  - **settings.py**
+  - `settings.py`
 
     - 애플리케이션의 모든 설정을 포함
 
-  - **urls.py**
+  - `urls.py`
 
     - 사이트의 url과 적절한 views의 연결을 지정
 
-  - **wsgi.py**
+  - `wsgi.py` 
 
     - Web Server Gateway Interface
     - Django 애플리케이션이 웹 서버와 연결 및 소통하는 것을 도움
 
-  - **managy.py**
+  - `managy.py`
 
     - Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인 유틸리티
 
@@ -231,7 +234,7 @@
       
       
 
-- Application 생성
+- **Application 생성**
 
   일반적으로 Application명은 <u>복수형</u>으로 하는 것을 권장
 
@@ -241,37 +244,38 @@
 
   
 
-- Application 구조
-  - **admin.py**
+- **Application 구조**
+  
+  - `admin.py`
     - 관리자용 페이지를 설정하는 곳
-  - **apps.py** (x)
+  - `apps.py` (x)
     - 앱의 정보가 작성된 곳
-  - **models.py**
+  - `models.py`
     - 앱에서 사용하는 Model을 정의하는 곳
-  - **tests.py** (x)
+  - `tests.py` (x)
     - 프로젝트의 테스트 코드를 작성하는 곳
-  - **views.py**
+  - `views.py`
     - view 함수들이 정의되는 곳
 
 
 
-- Project & Application
-  - **Project**
+- **Project & Application**
+  - `Project`
     - Project(이하 프로젝트)는 Application(이하 앱)의 집합(collection of apps)
     - 프로젝트에는 여러 앱이 포함될 수 있음
     - 앱은 여러 프로젝트에 있을 수 있음
-  - **Application**
+  - `Application`
     - 앱은 실제 요청을 처리하고 페이지를 보여주고 하는 등의 역할을 담당
     - 하나의 프로젝트는 여러 앱을 가짐
     - 일반적으로 앱은 하나의 역할 및 기능 단위로 작성함
 
 
 
-- 앱 등록
+- **앱 등록**
 
   프로젝트에서 앱을 사용하기 위해서는 반드시 INSTALLED_APPS 리스트에 추가해야 함 (프로젝트 - settings.py)
 
-  - INSTALLED_APPS
+  - `INSTALLED_APPS`
 
     - Django installation에 활성화된 모든 앱을 지정하는 문자열 목록
 
@@ -360,23 +364,22 @@
   TIME_ZONE = 'Asia/Seoul'
   ```
   
-  - **LANGUAGE_CODE**
+  - `LANGUAGE_CODE`
     - 모든 사용자에게 제공되는 번역을 결정
     - 이 설정이 적용되려면 USE_I18N이 활성화되어 있어야 함
     - [language-identifiers](http://www.i18nguy.com/unicode/language-identifiers.html)
-  - **TIME_ZONE**
-
+  - `TIME_ZONE`
     - 데이터베이스 연결의 시간대를 나타내는 문자열 지정
     - USE_TZ가 True이고 이 옵션이 설정된 경우 데이터베이스에서 날짜 시간을 읽으면, UTC 대신 새로 설정한 시간대의 인식 날짜&시간이 반환됨
     - USE_TZ이 False인 상태로 이 값을 설정하는 것은 error가 발생하므로 주의
     - [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-  
-  - **USE_I18N**
+    
+  - `USE_I18N`
     - Django의 번역 시스템을 활성화해야 하는지 여부를 지정
-  - **USE_L10N**
+  - `USE_L10N`
     - 데이터의 지역화된 형식(localized formatting)을 기본적으로 활성화할지 여부를 지정
     - True일 경우, Django는 현재 locale의 형식을 사용하여 숫자와 날짜를 표시
-  - **USE_TZ**
+  - `USE_TZ`
     - datetimes가 기본적으로 시간대를 인식하는지 여부를 지정
     - True일 경우 Django는 내부적으로 시간대 인식 날짜 / 시간을 사용
 
@@ -497,7 +500,7 @@
 
 ### -   실습
 
-- variable
+- **variable**
 
 ```python
 # urls.py
@@ -576,7 +579,7 @@ def dinner(request):
 
 
 
-- filters
+- **filters**
 
 ```python
 # views.py
@@ -601,7 +604,7 @@ def dinner(request):
 
 
 
-- tags
+- **tags**
 
 ```html
 <!-- dinner.html -->
@@ -619,7 +622,7 @@ def dinner(request):
 
 
 
-- comments
+- **comments**
 
 ```django
 <!-- dinner.html -->
@@ -637,7 +640,7 @@ def dinner(request):
 
 ### - 템플릿 상속
 
-- Template inheritance
+- **Template inheritance**
   - 템플릿 상속은 기본적으로 코드의 재사용성에 초점을 맞춤
   - 템플릿 상속을 사용하면 사이트의 모든 공통 요소를 포함하고, 하위 템플릿이 재정의(override) 할 수 있는 블록을 정의하는 기본 "skeleton" 템플릿을 만들 수 있음
 
@@ -757,7 +760,7 @@ def dinner(request):
 
       
 
-### -`GET`
+### - GET
 
 - 서버로부터 정보를 조회하는 데 사용
 - 데이터를 가져올 때만 사용해야 함
@@ -766,9 +769,9 @@ def dinner(request):
 
 
 
-- [실습] Throw & Catch
+- **[실습] Throw & Catch**
 
-  - Throw
+  - `Throw`
 
     ```python
     # urls.py
@@ -800,7 +803,7 @@ def dinner(request):
     {% endblock %}
     ```
 
-  - Catch
+  - `Catch`
 
     ```python
     # urls.py
