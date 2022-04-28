@@ -60,7 +60,7 @@ on my way studying programming language _ PYTHON
 
 
 
-### 📂 [extra](./4_extra)
+### 📂 [extra](./extra)
 
 overall studies on IT
 
