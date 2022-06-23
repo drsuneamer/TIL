@@ -140,3 +140,11 @@
   ![image-20220621115205567](React.assets/image-20220621115205567.png)
 
   ![image-20220621115215632](React.assets/image-20220621115215632.png)
+
+
+
+### 6. event
+
+![image-20220622000304893](React.assets/image-20220622000304893.png)
+
+![image-20220622000313833](React.assets/image-20220622000313833.png)
