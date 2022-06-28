@@ -148,3 +148,13 @@
 ![image-20220622000304893](React.assets/image-20220622000304893.png)
 
 ![image-20220622000313833](React.assets/image-20220622000313833.png)
+
+
+
+### 7. state
+
+```react
+import {useState} from 'react';
+```
+
+- 지역 변수를 state 즉 `상태`로 업그레이드
