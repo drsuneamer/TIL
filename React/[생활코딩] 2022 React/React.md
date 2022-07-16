@@ -52,9 +52,9 @@
 
     - 설치 여부 물으면 yes
 
-    ![image-20220619232419875](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220619232419875.png)
+    ![image-20220717020502939](React.assets/image-20220717020502939.png)
 
-    ![image-20220619232432435](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220619232432435.png)
+    ![image-20220717020509266](React.assets/image-20220717020509266.png)
 
   
 
@@ -62,7 +62,7 @@
 
     - 웹 브라우저가 뜨면서 샘플 리액트 앱이 뜸
 
-    ![image-20220619232643329](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220619232643329.png)
+    ![image-20220717020517819](React.assets/image-20220717020517819.png)
 
 
 
