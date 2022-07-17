@@ -1,0 +1,19 @@
+################
+# [제목] TIL-YYMMDD <main-topics>
+# 제목은 50자 이내 / 변경사항이 "무엇"인지 명확히 작성 / 끝에 마침표 금지
+# i 누르면 커밋메시지 입력가능, 입력 다 하면 esc누르고 :wq 입력하고 엔터
+# 저장하지 않고 강제 종료 :q!
+################
+
+################
+# - 자세한 내용
+# ALGO : 알고리즘
+# PYTHON : 
+# REACT : 프론트엔드-리액트
+# ex)
+# - type: ALGO
+# - BOJ #xxxx / Selection-sort logit
+# - type: REACT
+# - state / lifecycle
+################
+

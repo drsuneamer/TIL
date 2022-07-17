@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import Library from './chapter_03/Library';   // ch03
 import Clock from './chapter_04/Clock';   // ch04
 import CommentList from './chapter_05/CommentList';   // ch05
-                                                                  
+
+/* [chapter_0]
 ReactDOM.render(
   <React.StrictMode>
     <CommentList />
