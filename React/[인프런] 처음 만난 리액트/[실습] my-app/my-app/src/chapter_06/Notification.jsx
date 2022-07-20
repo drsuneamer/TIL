@@ -1,6 +1,6 @@
 import React from "react";
 
-const sytles = {
+const styles = {
   wrapper: {
     margin: 8,
     padding: 8,
@@ -20,6 +20,19 @@ class Notification extends React.Component {
     super(props);
 
     this.state = {};  // state에 아무런 데이터도 없음
+  }
+  
+  // Lifecycle Method 사용해보기
+  conponentDidMount() {
+    console.log(`${this.props.id} componentDidMount() called.`);
+  }
+
+  componentDidUpdate() {
+    console.log(`${this.props.id} componentDidUpdate() called.`);
+  }
+
+  componentWillUnmount() {
+    console.log(`${this.props.id} componentWillUnmount() called.`);
   }
 
   render() {
