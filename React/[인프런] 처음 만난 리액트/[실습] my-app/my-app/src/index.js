@@ -7,14 +7,24 @@ import reportWebVitals from './reportWebVitals';
 // import Library from './chapter_03/Library';   // ch03
 // import Clock from './chapter_04/Clock';   // ch04
 // import CommentList from './chapter_05/CommentList';   // ch05
-import NotificationList from './chapter_06/NotificationList'
+// import NotificationList from './chapter_06/NotificationList'   // ch06
+import Accommodate from './chapter_07/Accommodate'
 
+ReactDOM.render(
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+/* [chapter_06]
 ReactDOM.render(
   <React.StrictMode>
     <NotificationList />
   </React.StrictMode>,
   document.getElementById('root')
 );
+*/
 
 /* [chapter_05]
 ReactDOM.render(
