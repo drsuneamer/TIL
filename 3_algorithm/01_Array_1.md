@@ -1,4 +1,4 @@
-# 배열 (Array 1)
+# 배열 (01_Array_1)
 
 > Algorithm Problem Solving
 >
@@ -24,7 +24,7 @@
   
       주로 슈도 코드로 나타내는 법을 배울 것
 
-![image-20220208175937339](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220208175937339.png)
+![image-20220826011855018](01_Array_1.assets/image-20220826011855018.png)
 
 - **알고리즘의 성능은 무엇으로 측정하는가?**
 
@@ -70,7 +70,7 @@
 
   ​	알고리즘 2에서는 숫자가 커져도 연산의 수가 달라지지 않는다.
 
-  ![image-20220208180011820](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220208180011820.png)
+  ![image-20220826011902167](01_Array_1.assets/image-20220826011902167.png)
 
   
 
@@ -85,7 +85,7 @@
     
       알고리즘 2: 입력의 숫자에 관계 없이 변하지 않는다
 
-  ![image-20220208180035810](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220208180035810.png)
+  ![image-20220826011910165](01_Array_1.assets/image-20220826011910165.png)
 
   
 
@@ -99,7 +99,7 @@
 
     - 예를 들어
 
-      ![image-20220209022506078](Array 1.assets/image-20220209022506078.png)
+      ![image-20220209022506078](01_Array_1.assets/image-20220209022506078.png)
 
     - n개의 데이터를 입력 받아 저장한 후 각 데이터에 1씩 증가시킨 후 각 데이터를 화면에 출력하는 알고리즘의 시간복잡도는 어떻게 되나?
 
@@ -111,7 +111,7 @@
 
   요소 수가 증가함에 따라 각기 다른 시간복잡도의 알고리즘은 아래와 같은 연산 수를 보인다.
 
-  ![image-20220209022736291](Array 1.assets/image-20220209022736291.png)
+  ![image-20220209022736291](01_Array_1.assets/image-20220209022736291.png)
 
   
 
@@ -119,7 +119,7 @@
   
   ​	-보통 10억 번의 연산 당 1초로 측정
   
-  ![image-20220209022839235](Array 1.assets/image-20220209022839235.png)
+  ![image-20220209022839235](01_Array_1.assets/image-20220209022839235.png)
 
 
 
@@ -133,7 +133,7 @@
 
   아래의 예는 6개의 변수를 사용해야 하는 경우, 이를 배열로 바꾸어 사용하는 것이다.
 
-  ![image-20220209022944823](Array 1.assets/image-20220209022944823.png)
+  ![image-20220209022944823](01_Array_1.assets/image-20220209022944823.png)
 
 ​		
 
@@ -160,7 +160,7 @@
 
       크기를 정해 두고 만드는 것이 더 편할 때도 있음 (예시4)
       
-      ![image-20220209023150964](Array 1.assets/image-20220209023150964.png)
+      ![image-20220209023150964](01_Array_1.assets/image-20220209023150964.png)
 
   - 1차원 배열의 접근
   
@@ -185,7 +185,7 @@
     
     - 회전 결과, B상자의 낙차는 6, C상자의 낙차는 1이다.
     
-      ![image-20220209092843477](Array 1.assets/image-20220209092843477.png)
+      ![image-20220209092843477](01_Array_1.assets/image-20220209092843477.png)
     
       숫자들 간의 관계를 파악하는 것이 중요
     
@@ -261,11 +261,11 @@
 
   
 
-  ![image-20220209024144586](Array 1.assets/image-20220209024144586.png)
+  ![image-20220209024144586](01_Array_1.assets/image-20220209024144586.png)
 
   -두 번째 패스
 
-  ![image-20220209024204407](Array 1.assets/image-20220209024204407.png)
+  ![image-20220209024204407](01_Array_1.assets/image-20220209024204407.png)
 
   -세 번째 패스
 
@@ -276,15 +276,15 @@
   
   
   
-  ![image-20220209024221192](Array 1.assets/image-20220209024221192.png)
+  ![image-20220209024221192](01_Array_1.assets/image-20220209024221192.png)
   
   -네 번째 패스
   
-  ![image-20220209024236364](Array 1.assets/image-20220209024236364.png)
+  ![image-20220209024236364](01_Array_1.assets/image-20220209024236364.png)
   
   -정렬 끝
   
-  ![image-20220209024256244](Array 1.assets/image-20220209024256244.png)
+  ![image-20220209024256244](01_Array_1.assets/image-20220209024256244.png)
 
 ​	
 
@@ -292,9 +292,9 @@
 
   앞서 살펴 본 정렬 과정을 코드로 구현하면 아래와 같다. (오름차순)
 
-  ![image-20220209024331185](Array 1.assets/image-20220209024331185.png)
+  ![image-20220209024331185](01_Array_1.assets/image-20220209024331185.png)
 
-​				![image-20220209102201549](Array 1.assets/image-20220209102201549.png)	
+​				![image-20220209102201549](01_Array_1.assets/image-20220209102201549.png)	
 
 
 
@@ -328,7 +328,7 @@
   정렬을 위해 counts라는 다른 형태의 배열을 만든다.
   ```
 
-  ![image-20220209103240690](Array 1.assets/image-20220209103240690.png)
+  ![image-20220209103240690](01_Array_1.assets/image-20220209103240690.png)
 
   정렬된 집합에서 각 항목의 앞에 위치할 항목의 개수를 반영하기 위해 counts의 원소를 조정한다. 
 
@@ -336,7 +336,7 @@
   counts[i] += counts[i-1]
   ```
 
-  ![image-20220209104507645](Array 1.assets/image-20220209104507645.png)
+  ![image-20220209104507645](01_Array_1.assets/image-20220209104507645.png)
 
   counts[1]을 감소시키고 Temp에 1을 삽입한다.
 
@@ -347,11 +347,11 @@
   	TEMP[counts[data[J]]] = DATA[J]
   ```
 
-  ![image-20220209104559404](Array 1.assets/image-20220209104559404.png)
+  ![image-20220209104559404](01_Array_1.assets/image-20220209104559404.png)
 
   counts[4]를 감소시키고 temp에 4를 삽입한다.
 
-  ![image-20220209110424872](Array 1.assets/image-20220209110424872.png)
+  ![image-20220209110424872](01_Array_1.assets/image-20220209110424872.png)
 
   counts[2]를 감소시키고 temp에 2를 삽입한다.
 
@@ -361,29 +361,29 @@
   	TEMP[counts[DATA[J]]] = DATA[J]
   ```
 
-  ![image-20220209110808702](Array 1.assets/image-20220209110808702.png)
+  ![image-20220209110808702](01_Array_1.assets/image-20220209110808702.png)
 
   counts[1]을 감소시키고 temp에 1을 삽입한다.
 
   
 
-  ![image-20220209111021659](Array 1.assets/image-20220209111021659.png)
+  ![image-20220209111021659](01_Array_1.assets/image-20220209111021659.png)
 
   counts[3]을 감소시키고  temp에 3을 삽입한다.
 
-  ![image-20220209112106163](Array 1.assets/image-20220209112106163.png)
+  ![image-20220209112106163](01_Array_1.assets/image-20220209112106163.png)
 
   counts[1]을 감소시키고 temp에 1을 삽입한다.
 
-  ![image-20220209112129657](Array 1.assets/image-20220209112129657.png)
+  ![image-20220209112129657](01_Array_1.assets/image-20220209112129657.png)
 
   counts[4]를 감소시키고 temp에 4를 삽입한다.
 
-  ![image-20220209112158580](Array 1.assets/image-20220209112158580.png)
+  ![image-20220209112158580](01_Array_1.assets/image-20220209112158580.png)
 
   counts[0]를 감소시키고 temp에 0을 삽입한다.
 
-  ![image-20220209112228933](Array 1.assets/image-20220209112228933.png)
+  ![image-20220209112228933](01_Array_1.assets/image-20220209112228933.png)
 
   Temp 업데이트 완료하고 정렬 작업을 종료한다. 
 
@@ -393,7 +393,7 @@
 
 - **카운팅 정렬 알고리즘**
 
-![image-20220209111057170](Array 1.assets/image-20220209111057170.png)			
+![image-20220209111057170](01_Array_1.assets/image-20220209111057170.png)			
 
 ```pseudocode
 A = DATA
@@ -405,7 +405,7 @@ C = counts
 
 - **정렬 알고리즘 비교**
 
-![image-20220209111824510](Array 1.assets/image-20220209111824510.png)
+![image-20220209111824510](01_Array_1.assets/image-20220209111824510.png)
 
 
 
@@ -471,13 +471,13 @@ C = counts
 
     - 예) 입력으로 [2, 3, 5, 7, 7, 7]을 받았을 경우, 아래와 같이 순열을 생성할 수 있다.
 
-      ![image-20220209112942459](Array 1.assets/image-20220209112942459.png)
+      ![image-20220209112942459](01_Array_1.assets/image-20220209112942459.png)
 
   - 해답 테스트하기
 
     - 앞의 3자리와 뒤의 3자리를 잘라, run과 triplet 여부를 테스트하고 최종적으로 baby-gin을 판단한다.
 
-    - 예) ![image-20220209113033249](Array 1.assets/image-20220209113033249.png)
+    - 예) ![image-20220209113033249](01_Array_1.assets/image-20220209113033249.png)
 
       
 
@@ -514,7 +514,7 @@ C = counts
 
   동일한 숫자가 포함되지 않았을 때, 각 자리 수 별로 loop을 이용해 아래와 같이 구현할 수 있다.
 
-  ![image-20220209123602909](Array 1.assets/image-20220209123602909.png)
+  ![image-20220209123602909](01_Array_1.assets/image-20220209123602909.png)
 
 
 
@@ -563,11 +563,11 @@ C = counts
 
   ​	6개의 숫자는 6자리의 정수 값으로 입력된다.
 
-  ​	counts 배열의 각 원소를 체크하여 run과 tiplet 및 baby-gin 여부를 판단한다.<img src="Array 1.assets/image-20220209141418159.png" alt="image-20220209141418159" style="zoom:150%;" />
+  ​	counts 배열의 각 원소를 체크하여 run과 tiplet 및 baby-gin 여부를 판단한다.<img src="01_Array_1.assets/image-20220209141418159.png" alt="image-20220209141418159" style="zoom:150%;" />
 
-  ![image-20220209141430782](Array 1.assets/image-20220209141430782.png)
+  ![image-20220209141430782](01_Array_1.assets/image-20220209141430782.png)
 
-  - 구현 예		![image-20220209141511356](Array 1.assets/image-20220209141511356.png)![image-20220209141524919](Array 1.assets/image-20220209141524919.png)
+  - 구현 예		![image-20220209141511356](01_Array_1.assets/image-20220209141511356.png)![image-20220209141524919](01_Array_1.assets/image-20220209141524919.png)
 
     
 

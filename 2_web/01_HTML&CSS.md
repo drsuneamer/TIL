@@ -1,4 +1,4 @@
-# 01. HTML & CSS
+# 01_HTML&CSS
 
 > [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022012813080928300/index.html) 2022-02-03
 
@@ -83,7 +83,7 @@
   - < script > : 스크립트 요소 (JavaScript 파일/코드)
   - < style > : CSS 직접 작성
 
-![image-20220203092307342](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203092307342.png)
+![image-20220826011428903](01_HTML&CSS.assets/image-20220826011428903.png)
 
 
 
@@ -101,7 +101,7 @@
   - HTML 문서에 대한 모델을 구성함
   - HTML 문서 내의 각 요소에 접근 / 수정에 필요한 프로퍼티와 메서드를 제공함
 
-![image-20220203092331101](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203092331101.png)
+![image-20220826011435414](01_HTML&CSS.assets/image-20220826011435414.png)
 
 
 
@@ -109,7 +109,7 @@
 
 - HTML의 요소는 태그와 내용(contents)로 구성되어 있다.
 
-![image-20220203092602456](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203092602456.png)
+![image-20220826011442124](01_HTML&CSS.assets/image-20220826011442124.png)
 
 - HTML 요소는 시작 태그와 종료 태그 그리고 태그 사이에 위치한 내용으로 구성
   - 태그(Element, 요소)는 컨텐츠(내용)를 감싸는 것으로 그 정보의 성격과 의미를 정의
@@ -124,9 +124,13 @@
 
 #### - 속성(attribute)
 
-- 태그별로 사용할 수 있는 특성은 다르다![image-20220203092832087](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203092832087.png)
+- 태그별로 사용할 수 있는 특성은 다르다
 
-- 속성 작성 스타일 가이드![image-20220203092927917](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203092927917.png)
+  ![image-20220826011459277](01_HTML&CSS.assets/image-20220826011459277.png)
+
+- 속성 작성 스타일 가이드
+
+  ![image-20220826011510067](01_HTML&CSS.assets/image-20220826011510067.png)
 
 - 속성을 통해 태그의 부가적인 정보를 설정할 수 있음
 
@@ -174,15 +178,15 @@
 - 인라인 / 블록 요소
 - 텍스트 요소
 
-​	![image-20220203163542094](01. HTML & CSS.assets/image-20220203163542094.png)
+​	![image-20220203163542094](01_HTML&CSS.assets/image-20220203163542094.png)
 
-![image-20220203163654036](01. HTML & CSS.assets/image-20220203163654036.png)
+![image-20220203163654036](01_HTML&CSS.assets/image-20220203163654036.png)
 
 - 그룹 컨텐츠 
 
-​	![image-20220203163625318](01. HTML & CSS.assets/image-20220203163625318.png)
+​	![image-20220203163625318](01_HTML&CSS.assets/image-20220203163625318.png)
 
-![image-20220203163707644](01. HTML & CSS.assets/image-20220203163707644.png)
+![image-20220203163707644](01_HTML&CSS.assets/image-20220203163707644.png)
 
 
 
@@ -312,7 +316,7 @@
 
 - **CSS 구문 - 용어 정리**
 
-  ![image-20220203132414008](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220203132414008.png)
+  ![image-20220826011601438](01_HTML&CSS.assets/image-20220826011601438.png)
 
 
 
@@ -513,25 +517,25 @@
 - 자손 결합자
   - selectorA 하위의 모든 selectorB 요소
 
-![image-20220203172822512](01. HTML & CSS.assets/image-20220203172822512.png)
+![image-20220203172822512](01_HTML&CSS.assets/image-20220203172822512.png)
 
 - 자식 결합자
 
   - selectorA 바로 아래의 selectorB 요소
 
-    ![image-20220203172832285](01. HTML & CSS.assets/image-20220203172832285.png)
+    ![image-20220203172832285](01_HTML&CSS.assets/image-20220203172832285.png)
 
 - 일반 형제 결합자
 
   - selectorA의 형제 요소 중 뒤에 위치하는 selectorB 요소를 모두 선택
 
-    ![image-20220203172843024](01. HTML & CSS.assets/image-20220203172843024.png)
+    ![image-20220203172843024](01_HTML&CSS.assets/image-20220203172843024.png)
 
 - 인접 형제 결합자
 
   - selectorA의 형제 요소 중 바로 뒤에 위치하는 selectorB 요소를 선택
 
-    ![image-20220203172854037](01. HTML & CSS.assets/image-20220203172854037.png)
+    ![image-20220203172854037](01_HTML&CSS.assets/image-20220203172854037.png)
 
 
 
@@ -547,32 +551,32 @@
 
 - **Normal Flow**
 
-![image-20220203142434867](01. HTML & CSS.assets/image-20220203142434867.png)
+![image-20220203142434867](01_HTML&CSS.assets/image-20220203142434867.png)
 
 - Box model 구성
 
   - 모든 HTML 요소는 box 형태로 되어 있음
 
-  - 하나의 박스는 네 부분(영역)으로 이루어짐![image-20220203144522128](01. HTML & CSS.assets/image-20220203144522128.png)
+  - 하나의 박스는 네 부분(영역)으로 이루어짐![image-20220203144522128](01_HTML&CSS.assets/image-20220203144522128.png)
 
     - **content**
     - **padding**
 
-    ![image-20220203150439280](01. HTML & CSS.assets/image-20220203150439280.png)
+    ![image-20220203150439280](01_HTML&CSS.assets/image-20220203150439280.png)
 
     - **border**
 
-    ![image-20220203150520235](01. HTML & CSS.assets/image-20220203150520235.png)
+    ![image-20220203150520235](01_HTML&CSS.assets/image-20220203150520235.png)
 
     - **margin**
 
-    ![image-20220203150415306](01. HTML & CSS.assets/image-20220203150415306.png)
+    ![image-20220203150415306](01_HTML&CSS.assets/image-20220203150415306.png)
 
   - shorthand를 통해서 표현 가능하다
 
-  ![image-20220203150627497](01. HTML & CSS.assets/image-20220203150627497.png)
+  ![image-20220203150627497](01_HTML&CSS.assets/image-20220203150627497.png)
 
-![image-20220203150935292](01. HTML & CSS.assets/image-20220203150935292.png)
+![image-20220203150935292](01_HTML&CSS.assets/image-20220203150935292.png)
 
 
 
@@ -583,7 +587,7 @@
 - 다만, 우리가 일반적으로 영역을 볼 때는 border까지의 너비를 100px 보는 것을 원함
   - 그 경우 box-sizing을 border-box로 설정
 
-![image-20220203150327405](01. HTML & CSS.assets/image-20220203150327405.png)
+![image-20220203150327405](01_HTML&CSS.assets/image-20220203150327405.png)
 
 
 
@@ -650,7 +654,7 @@
 
 #### - 속성에 따른 수평 정렬
 
-![image-20220203153753809](01. HTML & CSS.assets/image-20220203153753809.png)
+![image-20220203153753809](01_HTML&CSS.assets/image-20220203153753809.png)
 
 
 

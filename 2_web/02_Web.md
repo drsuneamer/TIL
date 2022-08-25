@@ -1,4 +1,4 @@
-# 02. Web
+# 02_Web
 
 > [강의자료](https://edu.ssafy.com/data/upload_files/crossUpload/openLrn/ebook/unzip/A2022012810325778600/index.html)  2022-02-07
 
@@ -45,7 +45,7 @@
 
   - Lorem Ipsum : dummy text 제작 (Lorem 300)
   
-  ![image-20220206221552797](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220206221552797.png)
+  ![image-20220826011650586](02_Web.assets/image-20220826011650586.png)
 
 
 
@@ -106,7 +106,7 @@
     - Flex Container (부모 요소)
     - Flex Item (자식 요소)
 
-    ![image-20220206222024475](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220206222024475.png)
+    ![image-20220826011715604](02_Web.assets/image-20220826011715604.png)
 
 - **Flexbox 축**
 
@@ -163,16 +163,16 @@
 - main axis 기준 방향 설정
 - 역방향의 경우 HTML 태그 선언 순서와 시각적으로 다르니 유의 (웹 접근성에 영향) --> 마크업 자체는 1, 2, 3 순서로 되어 있음
 
-![image-20220207101217027](02. Web.assets/image-20220207101217027.png)
+![image-20220207101217027](02_Web.assets/image-20220207101217027.png)
 
 ##### + flex-wrap
 
-- 아이템이 컨테이너를 벗어나는 경우 해당 영역 내에 배치되도록 설정
+- 02_Web아이템이 컨테이너를 벗어나는 경우 해당 영역 내에 배치되도록 설정
 - 즉, 기본적으로 <u>컨테이너 영역을 벗어나지 않도록</u> 함
   - nowrap (기본 값) : 한 줄에 배치
   - wrap : 넘치면 그 다음 줄로 배치
 
-![image-20220207101316590](02. Web.assets/image-20220207101316590.png)
+![image-20220207101316590](02_Web.assets/image-20220207101316590.png)
 
 ##### + flex-flow
 
@@ -203,7 +203,7 @@
 
 - Main axis를 기준으로 공간 배분
 
-![image-20220207101650591](02. Web.assets/image-20220207101650591.png)
+![image-20220207101650591](02_Web.assets/image-20220207101650591.png)
 
 
 
@@ -211,7 +211,7 @@
 
 - Cross axis를 기준으로 공간 배분 (아이템이 한 줄로 배치되는 경우 확인할 수 없음)
 
-![image-20220207101735148](02. Web.assets/image-20220207101735148.png)
+![image-20220207101735148](02_Web.assets/image-20220207101735148.png)
 
 
 
@@ -235,7 +235,7 @@
 
 - 모든 아이템을 Cross axis를 기준으로 정렬
 
-![image-20220207102803446](02. Web.assets/image-20220207102803446.png)
+![image-20220207102803446](02_Web.assets/image-20220207102803446.png)
 
 
 
@@ -244,7 +244,7 @@
 - 개별 아이템을 Cross axis 기준으로 정렬
   - 주의! 해당 속성은 컨테이너에 적용하는 것이 아니라 <u>개별 아이템에 적용</u>
 
-![image-20220207102841333](02. Web.assets/image-20220207102841333.png)
+![image-20220207102841333](02_Web.assets/image-20220207102841333.png)
 
 
 
@@ -253,17 +253,17 @@
 - **flex-grow**  : 남은 영역을 아이템에 분배
 - **order** : 배치 순서
 
-![image-20220207103746804](02. Web.assets/image-20220207103746804.png)
+![image-20220207103746804](02_Web.assets/image-20220207103746804.png)
 
 
 
 - 활용 레이아웃 - 수직 수평 가운데 정렬
 
-![image-20220207103821057](02. Web.assets/image-20220207103821057.png)
+![image-20220207103821057](02_Web.assets/image-20220207103821057.png)
 
 - 활용 레이아웃 - 카드 배치
 
-![image-20220207103925402](02. Web.assets/image-20220207103925402.png)
+![image-20220207103925402](02_Web.assets/image-20220207103925402.png)
 
 
 
@@ -293,7 +293,7 @@
 
 - spacing
 
-  ![image-20220207143639152](02. Web.assets/image-20220207143639152.png)
+  ![image-20220207143639152](02_Web.assets/image-20220207143639152.png)
 
 
 

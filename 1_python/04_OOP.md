@@ -52,7 +52,7 @@
   - 속성(attribute) : 어떤 상태(데이터)를 가지는가?
   - 조작법(method) : 어떤 행위(함수)를 할 수 있는가?
 
-  ![image-20220126095649022](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126095649022.png)
+  ![image-20220826010847250](04_OOP.assets/image-20220826010847250.png)
 
 - 객체 지향 프로그래밍이란?
 
@@ -64,7 +64,7 @@
   - a.sort()
     - 직접 sort와 reverse되어 변화 가능
 
-  ![image-20220126091550711](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126091550711.png)
+  ![image-20220826010858464](04_OOP.assets/image-20220826010858464.png)
 
 - cf) 절차 지향 프로그래밍
 
@@ -72,19 +72,19 @@
   - a = sorted(a)
     - a가 무엇을 직접적으로 할 수는 없음, 함수 안에 들어갔다가 결과로 반환될 뿐
 
-  ![image-20220126091301219](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126091301219.png)
+  ![image-20220826010911463](04_OOP.assets/image-20220826010911463.png)
 
 - 객체 지향 프로그래밍이 필요한 이유
 
   - 현실 세계를 프로그램 설계에 반영(추상화)
 
-  ![image-20220126092647155](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126092647155.png)
+  ![image-20220826010922511](04_OOP.assets/image-20220826010922511.png)
 
   
 
   - 예시) 사각형 넓이 구하기 코드
 
-    ![image-20220126093209772](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126093209772.png)
+    ![image-20220826010933232](04_OOP.assets/image-20220826010933232.png)
 
     - 절차 지향 프로그래밍
 
@@ -175,7 +175,7 @@
 
   - *파이썬은 모든 것이 객체, 모든 객체는 특정 타입의 인스턴스*
 
-    ![image-20220126133730418](C:\Users\drsuneamer\AppData\Roaming\Typora\typora-user-images\image-20220126133730418.png)
+    ![image-20220826010943017](04_OOP.assets/image-20220826010943017.png)
 
   
 
@@ -434,7 +434,7 @@
 
 ### - 메소드 정리
 
-![image-20220126140132393](04. OOP.assets/image-20220126140132393.png)
+![image-20220126140132393](04_OOP.assets/image-20220126140132393.png)
 
 - **인스턴스 메소드**
 
@@ -745,7 +745,7 @@
 
 - 파이썬에서 암묵적으로 존재하지만, 언어적으로는 존재하지 않음
 
-  ![image-20220126151929298](04. OOP.assets/image-20220126151929298.png)
+  ![image-20220126151929298](04_OOP.assets/image-20220126151929298.png)
 
 - 접근제어자 종류
   - Public Access Modifier : 어디서나
