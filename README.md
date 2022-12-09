@@ -4,62 +4,6 @@
 
 
 
-### 📂 [python](./1_python)
-
-on my way studying programming language _ PYTHON
-
-​	00. 파이썬의 기초
-
-​	01. 제어문
-
-​	02_01. 함수
-
-​	02_02. 모듈
-
-​	03_01. 데이터 구조
-
-​	03_02. 에러 / 예외 처리
-
-​	04. OOP
-
-
-
-
-
-### 📂 [web](./2_web)
-
-​	01. HTML & CSS
-
-​	02. Web
-
-
-
-### 📂 [algorithm](./3_algorithm)
-
-​	01. Array 1
-
-​	02. Array 2
-
-​	03. String
-
-​	04. Stack 1
-
-​	05. Stack 2
-
-​	06. Queue
-
-​	07. Tree
-
-​	08. Computation Thinking
-
-​	09. Start
-
-​	10. Exhaustive Search & Greedy
-
-​	11. Divide and Conquer & Backtracking
-
-
-
 ### 📂 [extra](./extra)
 
 overall studies on IT
