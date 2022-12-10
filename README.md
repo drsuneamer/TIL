@@ -4,59 +4,23 @@
 
 
 
-### 📂 [python](./1_python)
+### 📂 [Algorithm](./Algorithm)
 
-on my way studying programming language _ PYTHON
+​	👩‍💻 자바스크립트 알고리즘 문제풀이 입문 (코딩테스트 대비)
 
-​	00. 파이썬의 기초
+​		 - [인프런 강의](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/dashboard) 2022. 12. 10 ~
 
-​	01. 제어문
+​	📑 code templates
 
-​	02_01. 함수
+​		- 기본 로직 구성에 필요한 코드 템플릿 모음
 
-​	02_02. 모듈
+​	📑 DFS & BFS
 
-​	03_01. 데이터 구조
+​	📑 Greedy
 
-​	03_02. 에러 / 예외 처리
+​	📑 Tools for Algorithm
 
-​	04. OOP
-
-
-
-
-
-### 📂 [web](./2_web)
-
-​	01. HTML & CSS
-
-​	02. Web
-
-
-
-### 📂 [algorithm](./3_algorithm)
-
-​	01. Array 1
-
-​	02. Array 2
-
-​	03. String
-
-​	04. Stack 1
-
-​	05. Stack 2
-
-​	06. Queue
-
-​	07. Tree
-
-​	08. Computation Thinking
-
-​	09. Start
-
-​	10. Exhaustive Search & Greedy
-
-​	11. Divide and Conquer & Backtracking
+​	📑 정렬
 
 
 
@@ -87,27 +51,27 @@ overall studies on IT
 
 ​		- 이산수학 기본
 
-​	📋 Tools for Algorithm
-
-​	📋 DFS & BFS
-
-​	📋 code templates
 
 
+### 📂 [Java](./Java)
 
-### 📂 [aps](./aps)
-
-code files 
+Java 배워보기
 
 
 
+### 📂 [JavaScript](./JavaScript)
+
+JavaScript 공부하기
 
 
-### 📂 [daily_log](./daily_log)
 
-can see each steps I've taken each day
+### 📂 [Opic](./Opic)
 
+​	👩‍💻 매직템플릿으로 완성하는 Opic AL 완전 공략
 
+​		[강의](https://learning.multicampus.com/lrn/common/lrnSsoLogin) 2022. 12. 08 ~
+
+​		기본 구분, 템플릿 등 노트 정리
 
 
 
@@ -115,4 +79,50 @@ can see each steps I've taken each day
 
 1. What is if __ name __ = '__ main __'?
 2. about JSON
+
+
+
+### 📂 [React](./React)
+
+리액트 공부하기
+
+​	👩‍💻 [생활코딩] 2022 React
+
+​	👩‍💻 [인프런] 처음 만난 리액트
+
+​	📚 React 완벽 가이드
+
+
+
+### 📂 [SSAFY_2022](./SSAFY_2022)
+
+2022 SSAFY 1학기의 기록
+
+ 	1. python
+ 	2. web
+ 	3. algorithm
+ 	4. django
+ 	5. DB
+ 	6. JavaScript
+ 	7. Vue
+
+​	+) aps
+
+
+
+### 📂 [TypeScript](./TypeScript)
+
+​	👩‍💻 [인프런] 타입스크립트 입문 - 기초부터 실전까지
+
+
+
+### 📂 [Vue](./Vue)
+
+뷰 공부하기
+
+
+
+### 📂 [daily_log](./★ daily_log)
+
+can see each steps I've taken each day
 
