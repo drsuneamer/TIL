@@ -4,19 +4,19 @@
 */
 
 function solution(a, b, c) {
-  let answer = "YES",
-    sum = a + b + c,
-    max;
+	let answer = "YES",
+		sum = a + b + c,
+		max;
 
-  // 가장 큰 막대의 값 구하기
-  if (a > b) max = a;
-  else max = b;
-  if (c > max) max = c;
+	// 가장 큰 막대의 값 구하기
+	if (a > b) max = a;
+	else max = b;
+	if (c > max) max = c;
 
-  // 전체에서 가장 큰 값을 뺀 나머지 값과 비교하기
-  if (sum - max <= max) answer = "NO";
+	// 전체에서 가장 큰 값을 뺀 나머지 값과 비교하기
+	if (sum - max <= max) answer = "NO";
 
-  return answer;
+	return answer;
 }
 
 console.log(solution(6, 7, 11)); // YES

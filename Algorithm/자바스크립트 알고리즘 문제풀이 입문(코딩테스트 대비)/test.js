@@ -1,30 +1,20 @@
 /*
-  길이가 서로 다른 A, B, C 세 개의 막대 길이가 주어지면
-  이 세 막대로 삼각형을 만들 수 있으면 "YES"를 출력하고, 만들 수 없으면 "NO"를 출력한다.
+  연필 1다스는 12자루입니다. 학생 1인당 연필을 1자루씩 나누어 준다고 할 때,
+  N명의 학생 수를 입력하면 필요한 연필의 다스 수를 계산하는 프로그램을 작성하세요.
 */
 
-function solution(a, b, c) {
-  let answer = "YES",
-    sum = a + b + c,
-    max;
-
-  // 가장 큰 막대의 값 구하기
-  if (a > b) max = a;
-  else max = b;
-  if (c > max) max = c;
-
-  // 전체에서 가장 큰 값을 뺀 나머지 값과 비교하기
-  if (sum - max <= max) answer = "NO";
+function solution(n) {
+  let answer = Math.ceil(n / 12);
 
   return answer;
 }
 
-console.log(solution(6, 7, 11)); // YES
-console.log(solution(13, 33, 17)); // NO
-console.log(solution(5, 5, 10));
+console.log(solution(25))  // 3
 
-/*
-  TIP)
-  삼각형이 만들어지려면 가장 긴 막대를 뺀 나머지 두 개의 합이
-  가장 긴 막대의 길이보다 커야한다.
+/* 
+  TIP) MDN Math 문서 참고
+  Math.ceil 올림
+  Math.floor 내림
+  Math.round 반올림
+  Math.sqrt 제곱근
 */
