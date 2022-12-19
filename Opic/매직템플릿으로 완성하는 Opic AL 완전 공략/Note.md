@@ -29,3 +29,7 @@
 `depending on the situation` 
 
 ​	- 종류 나열할 때 사용 (그때그때 달라요!), 하나에 대해 깊게 파고들수록 답변하기는 더욱 어려워짐
+
+`on the spot` 
+
+​	- 그 즉시
