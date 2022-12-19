@@ -32,4 +32,4 @@
 
 `on the spot` 
 
-​	- 그 즉시
+​	- 그 즉시 (ex. my friends leave comments on the spot)
