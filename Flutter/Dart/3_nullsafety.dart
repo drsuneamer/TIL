@@ -14,5 +14,4 @@ void main() {
   }
 
   ej?.isNotEmpty; // 이렇게 간단하게 체크할 수도 있음
-
 }
