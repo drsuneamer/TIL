@@ -6,7 +6,7 @@ void main() {
   String? ej = 'EJ';
   ej = null;
 
-  ej.length;
+  //ej.length;
   // ej가 null일 수도 있기 때문에 에러
 
   if (ej != null) {

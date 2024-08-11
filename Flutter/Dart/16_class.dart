@@ -9,7 +9,7 @@ class Player {
     print('Hi, I\'m $name!');
 
     // var name = 'nc';
-    // 위와 같이 같은 이름의 변수 선언 후 Player의 name을 가져오려면 this.nam이라고 명시
+    // 위와 같이 같은 이름의 변수 선언 후 Player의 name을 가져오려면 this.name이라고 명시
   }
 }
 
