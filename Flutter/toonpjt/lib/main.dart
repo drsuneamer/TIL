@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toonpjt/widgets/button.dart';
 
 class Player {
   String name;
@@ -9,10 +10,12 @@ class Player {
 
 void main() {
   var ej = Player(name: 'ej');
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   // 이 앱의 root
   // build 메소드 구현 필요
   // 모든  widget은 build method 구현해야 한다
@@ -24,16 +27,16 @@ class App extends StatelessWidget {
     return MaterialApp(
         // Colors. dot 찍으면 색상 미리보기, 선택 가능
         home: Scaffold(
-      backgroundColor: Color(0xFF181818),
+      backgroundColor: const Color(0xFF181818),
       // column: 수직, row: 수평 배열
       body: Padding(
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 40,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               // 공간 만들기
               height: 80,
             ),
@@ -44,7 +47,7 @@ class App extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text(
+                    const Text(
                       'Hello, drsuneamer',
                       style: TextStyle(
                           color: Colors.white,
@@ -62,7 +65,7 @@ class App extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 120,
             ),
             Text(
@@ -72,10 +75,10 @@ class App extends StatelessWidget {
                 color: Colors.white.withOpacity(0.8),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
-            Text(
+            const Text(
               '\$ 7 997 412',
               style: TextStyle(
                 fontSize: 48,
@@ -83,28 +86,21 @@ class App extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF2B33A),
-                    borderRadius: BorderRadius.circular(45),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 50,
-                      vertical: 15,
-                    ),
-                    child: Text(
-                      'Transfer',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
+                Button(
+                  text: 'Transfer',
+                  bgColor: Color(0xFFF2B33A),
+                  textColor: Colors.black,
+                ),
+                Button(
+                  text: 'Request',
+                  bgColor: Color(0xFF1F2123),
+                  textColor: Colors.white,
                 ),
               ],
             )
