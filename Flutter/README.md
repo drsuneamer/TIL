@@ -78,3 +78,19 @@ scaffold: 화면의 구조 제공
 
 
 모든 widget은 class
+
+
+
+---
+
+Stateful widget
+
+
+
+setState: State 클래스에게 데이터가 변경되었다고 알림
+
+state가 바뀐다고 해서 무조건 재build하는 것은 아님. UI 바꾸지 않고 state만 바꾸는 것도 가능
+
+
+
+context: 이전의 모든 요소들의 정보 가지고 있음 - 부모 요소에 접근할 수 있게 해 줌
