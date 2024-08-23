@@ -58,6 +58,15 @@ class _HomeScreenState extends State<HomeScreen> {
     return duration.toString().split(".").first.substring(2, 7);
   }
 
+  void onResetPressed() {
+    timer.cancel();
+    setState(() {
+      isRunning = false;
+      totalSeconds = twentyFiveMinutes;
+      totalPomodoros = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Flexible(
-            flex: 2,
+            flex: 1,
             child: Container(
               alignment: Alignment.center,
               child: Text(
@@ -79,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Flexible(
-            flex: 2,
+            flex: 1,
             child: Center(
               child: IconButton(
                 iconSize: 120,
@@ -88,6 +97,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: Icon(isRunning
                     ? Icons.pause_circle_outline
                     : Icons.play_circle_outline),
+              ),
+            ),
+          ),
+          Flexible(
+            flex: 1,
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: GestureDetector(
+                onTap: onResetPressed, // This calls the function on tap
+                child: Text(
+                  'Reset',
+                  style: TextStyle(
+                    color: Theme.of(context).cardColor,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
               ),
             ),
           ),
