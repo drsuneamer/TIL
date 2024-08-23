@@ -10,15 +10,28 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int totalSeconds = 1500;
+  static const twentyFiveMinutes = 1500;
+
+  int totalSeconds = twentyFiveMinutes;
   late Timer timer; // late: 당장 초기화하지 않아도 괜찮음
 
   bool isRunning = false;
 
+  int totalPomodoros = 0;
+
   void onTick(Timer timer) {
-    setState(() {
-      totalSeconds--;
-    });
+    if (totalSeconds == 0) {
+      setState(() {
+        totalPomodoros++;
+        totalSeconds = twentyFiveMinutes;
+        isRunning = false;
+      });
+      timer.cancel();
+    } else {
+      setState(() {
+        totalSeconds--;
+      });
+    }
   }
 
   void onStartPressed() {
@@ -40,6 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  String format(int seconds) {
+    var duration = Duration(seconds: seconds);
+    return duration.toString().split(".").first.substring(2, 7);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               alignment: Alignment.center,
               child: Text(
-                '$totalSeconds',
+                format(totalSeconds),
                 style: TextStyle(
                   color: Theme.of(context).cardColor,
                   fontSize: 89,
@@ -81,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Theme.of(context).cardColor,
-                      borderRadius: BorderRadius.circular(50),
+                      //borderRadius: BorderRadius.circular(50),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -94,9 +112,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Theme.of(context).textTheme.displayLarge!.color,
                           ),
                         ),
-                        const Text(
-                          '0',
-                          style: TextStyle(
+                        Text(
+                          '$totalPomodoros',
+                          style: const TextStyle(
                             fontSize: 58,
                           ),
                         ),
