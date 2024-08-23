@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:toonpjt/screens/home_screen.dart';
 
 void main() {
@@ -7,21 +6,14 @@ void main() {
 }
 
 class App extends StatelessWidget {
+  // 이 위젯의 key를 stateless widget이라는 슈퍼클래스에 전달
+  // 위젯에는 ID같은 식별자 역할을 하는 key가 있음
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xffE7626C),
-        textTheme: const TextTheme(
-          displayLarge: TextStyle(
-            color: Color(0xFF232B55),
-          ),
-        ),
-        cardColor: const Color(0xffF4EDDB),
-      ),
-      home: const HomeScreen(),
+    return const MaterialApp(
+      home: HomeScreen(),
     );
   }
 }
