@@ -13,6 +13,8 @@ class _HomeScreenState extends State<HomeScreen> {
   int totalSeconds = 1500;
   late Timer timer; // late: 당장 초기화하지 않아도 괜찮음
 
+  bool isRunning = false;
+
   void onTick(Timer timer) {
     setState(() {
       totalSeconds--;
@@ -26,6 +28,16 @@ class _HomeScreenState extends State<HomeScreen> {
       const Duration(seconds: 1),
       onTick,
     );
+    setState(() {
+      isRunning = true;
+    });
+  }
+
+  void onPausePressed() {
+    timer.cancel();
+    setState(() {
+      isRunning = false;
+    });
   }
 
   @override
@@ -35,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Flexible(
-            flex: 1,
+            flex: 2,
             child: Container(
               alignment: Alignment.center,
               child: Text(
@@ -49,13 +61,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Flexible(
-            flex: 3,
+            flex: 2,
             child: Center(
               child: IconButton(
                 iconSize: 120,
                 color: Theme.of(context).cardColor,
-                onPressed: onStartPressed,
-                icon: const Icon(Icons.play_circle_outline),
+                onPressed: isRunning ? onPausePressed : onStartPressed,
+                icon: Icon(isRunning
+                    ? Icons.pause_circle_outline
+                    : Icons.play_circle_outline),
               ),
             ),
           ),
