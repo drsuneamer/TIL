@@ -25,3 +25,5 @@ pub.dev: dart, Flutter 공식 패키지 보관소
 Future: 미래에 받을 값의 타입을 알려 준다
 
 await: async 함수 안에서만 사용 가능
+
+builder: UI를 그려주는 함수

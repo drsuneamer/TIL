@@ -2,29 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:toonpjt/models/webtoon_model.dart';
 import 'package:toonpjt/services/api_service.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  HomeScreen({super.key}); // Future이 있으면 const 불가능
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  List<WebtoonModel> webtoons = [];
-  bool isLoading = true;
-
-  // 함수가 http 요청 기다림 > async
-  void waitForWebToons() async {
-    webtoons = await ApiService.getTodaysToons();
-    isLoading = false;
-    setState(() {});
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    waitForWebToons();
-  }
+  Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      body: FutureBuilder(
+          future: webtoons,
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return const Text("Data is here");
+            }
+            return const Text('Loading...');
+          }),
     );
   }
 }
