@@ -29,3 +29,10 @@ await: async 함수 안에서만 사용 가능
 builder: UI를 그려주는 함수
 
 ListBuilder: 한 번에 다 불러오는 게 아니고 필요할 때 불러옴 (무한스크롤 느낌)
+
+Navigator.push : 다른 위젯으로 넘어가기
+
+Hero widget:
+
+- tag 필요
+- 같은 tag로 일치시켜주면 이동하는 것처럼 보임
