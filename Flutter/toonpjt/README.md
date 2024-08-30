@@ -17,3 +17,11 @@ space 주려면 SizedBox 사용
 - backgroundColor: Color.fromARGB(255, 60, 9, 9)
 
 Container: div와 같이 child를 가지고 있는 단순한 box
+
+---
+
+pub.dev: dart, Flutter 공식 패키지 보관소
+
+Future: 미래에 받을 값의 타입을 알려 준다
+
+await: async 함수 안에서만 사용 가능
