@@ -27,3 +27,5 @@ Future: 미래에 받을 값의 타입을 알려 준다
 await: async 함수 안에서만 사용 가능
 
 builder: UI를 그려주는 함수
+
+ListBuilder: 한 번에 다 불러오는 게 아니고 필요할 때 불러옴 (무한스크롤 느낌)

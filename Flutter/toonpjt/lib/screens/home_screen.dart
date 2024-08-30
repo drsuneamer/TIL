@@ -5,7 +5,7 @@ import 'package:toonpjt/services/api_service.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key}); // Future이 있으면 const 불가능
 
-  Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
+  final Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
   @override
   Widget build(BuildContext context) {
@@ -26,10 +26,22 @@ class HomeScreen extends StatelessWidget {
       body: FutureBuilder(
           future: webtoons,
           builder: (context, snapshot) {
+            // snapshot 아니고 future 등의 이름 사용해도 됨
             if (snapshot.hasData) {
-              return const Text("Data is here");
+              return ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: snapshot.data!.length,
+                itemBuilder: (context, index) {
+                  print(index);
+                  var webtoon = snapshot.data![index];
+                  return Text(webtoon.title);
+                },
+                separatorBuilder: (context, index) => const SizedBox(width: 10),
+              );
             }
-            return const Text('Loading...');
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }),
     );
   }
