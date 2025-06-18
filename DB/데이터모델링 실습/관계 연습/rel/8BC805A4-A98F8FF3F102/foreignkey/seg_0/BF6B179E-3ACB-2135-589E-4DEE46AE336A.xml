@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BF6B179E-3ACB-2135-589E-4DEE46AE336A" containerWithKeyObject="5A4F991D-CFFF-EC2B-B545-092EBEA933B0" localFKIndex="EAB58DBF-3441-3D43-64DC-08B0079C2B05" name="Relation_2_상품_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>6CA35322-42AB-E751-4E24-CCDBC1FEB572</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<referredTableLongName>상품</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7A989DC0-8125-39D1-A62D-02DFEA0DB50D</referredTableID>
+<keyObject>7A4430FB-71C8-A746-C2A5-BC8DFAF67ABA</keyObject>
+<referredKeyID>7A4430FB-71C8-A746-C2A5-BC8DFAF67ABA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>상품번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

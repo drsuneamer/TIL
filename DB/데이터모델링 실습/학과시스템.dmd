@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="학과시스템" id="941D6FAB-60A0-1B84-06AB-1663240FDCC6" version="3.5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:40:30 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>941D6FAB-60A0-1B84-06AB-1663240FDCC6</designId>
+</OSDM_Design>

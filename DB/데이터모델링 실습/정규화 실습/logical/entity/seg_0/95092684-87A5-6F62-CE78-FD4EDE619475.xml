@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95092684-87A5-6F62-CE78-FD4EDE619475" name="주문v1v1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:29:42 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="order_id" id="BD08E19C-6134-43C4-CC46-3B46660C5F25">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:29:42 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="고객명" id="B1239FE8-9D7F-D577-CDD0-38BAC3F108D8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:29:42 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="고객주소" id="6B18FF35-8D6D-6C28-950B-588D0887E2C8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:29:42 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28744B3D-DA32-3B70-6DC5-6964C6E1DEF6" name="주문 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:29:42 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD08E19C-6134-43C4-CC46-3B46660C5F25</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

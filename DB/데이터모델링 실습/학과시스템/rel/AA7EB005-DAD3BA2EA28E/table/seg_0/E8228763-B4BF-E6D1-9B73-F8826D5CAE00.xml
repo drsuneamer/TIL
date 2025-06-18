@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8228763-B4BF-E6D1-9B73-F8826D5CAE00" name="대학원생">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>6ADE80F0-F710-581B-9201-DD1AE00FC96E</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="학생_학생코드" id="BED9F573-06AB-762A-14D8-AA3637307AD7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>9494B8BF-7CEA-5A29-6C2F-FCA522C4DA26</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C139EC97-EFFE-6436-FAAA-7527799D3A3C" referredColumn="251400B1-CCD0-9BC8-0A44-74819A9987E2"/>
+</associations>
+</Column>
+<Column name="취득학점" id="39E2E1FE-6FA8-0016-889F-A0A455BEEECE">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>4E2A94F6-F683-59D1-9831-EC1ED3EBDEB5</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="교수_교수번호" id="DE2999AB-0E29-01FF-320F-34199C2D055A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>EE6976AB-3F52-BAFC-A1AE-3849F73CF745</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9181B14-FC17-BBEC-CAF4-6C64504F3EE5" referredColumn="4302C360-3EF8-0F73-A11B-24254A294CA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A44D5E8-F2D3-12C8-45C3-BC9945F72224" name="대학원생_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>844D2B1E-2967-FEFA-46B7-BFED698ECC30</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED9F573-06AB-762A-14D8-AA3637307AD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B021CB86-D765-391D-62E0-FD6DF1389311" name="대학원생_학생_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>AF584BB4-801B-C073-EB81-152C18C772B5</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED9F573-06AB-762A-14D8-AA3637307AD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74529AB4-0442-1CCF-DFB1-2329422E1222" name="대학원생_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>DB9A64E1-F719-1C79-E9BD-C0F77627F6EF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE2999AB-0E29-01FF-320F-34199C2D055A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

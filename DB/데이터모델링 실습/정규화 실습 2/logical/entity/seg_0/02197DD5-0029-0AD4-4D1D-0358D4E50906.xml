@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02197DD5-0029-0AD4-4D1D-0358D4E50906" name="프로젝트정규화">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:49:18 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="사원번호" id="7BB32470-97E6-025A-BC3B-93E7FBDA583A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:49:27 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="이름" id="BE7FE1CC-1780-F9BE-080D-09F0B7E2563C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:49:52 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서번호" id="95FB27F8-0DD2-0BCD-C461-09843FB8BEEB">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:05 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서명" id="3E3FAFA2-4D6A-F9F0-8782-0490F0876531">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:07 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관리자사번" id="55EB92FD-BEE0-78C7-20B8-BC2D73B78C7E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:10 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관리자명" id="D95283A4-0386-197A-B87A-5000904810C3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:14 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트번호" id="DE3F5848-D7ED-6D63-D5ED-C0A0F9C0DD21">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:41 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트명" id="C271B7A8-244E-B1A0-C83C-DCC330AD8FA3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:46 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="투입일" id="DB008CEF-EDFE-533B-7267-CE49DAD26A5D">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:50 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="투입MH" id="F0C96BAC-8FA2-328C-2461-0861FD344E28">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:50:52 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DACB6C40-382C-6E93-008D-FA7266950FC2" name="프로젝트정규화 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:49:31 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<engineerTo>
+<item key="E2CFB2A2-4B28-E0C2-6316-F860C4BFD1E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BB32470-97E6-025A-BC3B-93E7FBDA583A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

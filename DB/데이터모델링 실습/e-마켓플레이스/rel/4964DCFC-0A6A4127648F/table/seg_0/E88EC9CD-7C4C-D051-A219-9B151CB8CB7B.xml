@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E88EC9CD-7C4C-D051-A219-9B151CB8CB7B" name="교수">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>D78E3F6F-2B84-0283-ADB2-D77A34EA4C6E</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>88633C0D-5E84-BDF8-0E08-6CD4EB33DBBF</importedID>
+<ordsAlias>a</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="교수번호" id="0473F2CA-9863-A46E-FC07-D572D793B999">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>9D16C5AE-2361-AA73-6D94-D0047ED6C47A</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>4302C360-3EF8-0F73-A11B-24254A294CA2</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성명" id="5105A4FB-F402-FA7C-58BF-923ACCA1F078">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>026B5991-7C34-8502-D59A-C062C0223806</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>097CE3D3-1F53-FEAA-FA7C-2F4057817172</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생년도" id="A11253AF-088F-E611-D01C-1321D17A388A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>39FDA028-05B6-3A9B-D227-44A472552C22</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>2FEB2379-E5E7-C9D9-7252-E6FC1A9FA0D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="소속학과" id="F7007A32-8CC0-85DE-7CFD-5DE4A84C666F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>3DD3E83D-B261-8071-E501-2C85022014DA</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>B5EDAAD6-8EAD-A3E9-F996-D86EA8BEFA59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="학과전화번호" id="6D0FC97A-E7D4-947D-3128-40AD7CF9247E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>2EF2ED58-A35B-8A8E-FD7C-323302F8D60D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>03ACB43B-FDF5-4B4E-C7A1-F9619E0A83F7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="직위" id="7BE8CDCC-9A09-FAC9-F20F-069E62ECC9ED">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>943CE4D1-A1EC-5CD5-B9CB-A5344C562FDA</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>44BE011F-2914-AB6F-FCC5-1217F73680C7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="결혼여부" id="7AF9106F-3CD9-9B80-9D83-7FA0F64CC905">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>AA37697E-0815-8B05-50E5-9974F2AA4A7C</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>68EC61B0-6334-6E30-B056-9E86B75ABF4E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="연구분야" id="EA59E5FF-538C-09E3-2BA6-354847A59A08">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>A0AD3292-E925-31AB-96A9-534BC72C86DB</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>1DCEC62A-57F1-64D6-7D1F-CEA8D2554B3C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생_도시코드" id="CC4AE6ED-E0C1-3CD5-B4BA-3841D157C716">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>08A8687A-B604-98A2-A178-AFECBB426ADF</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>E919404A-0E4A-EB01-48CA-2D957CA6AE82</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15A89511-B7E9-1843-1C62-8CE7CC9EC8AC" referredColumn="6EE20F48-EA76-6696-88F4-B4E96D958F2A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF7D05B1-B916-A06C-9D73-9E3B9F444677" name="교수_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>E34759EF-B1C8-4705-0680-BAF53ECDE177</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>4D68705B-A0E9-B341-8A9E-132FE3FEDEEB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0473F2CA-9863-A46E-FC07-D572D793B999"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91BFB873-B50E-1F66-7801-B838A751F31A" name="교수_도시_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>47FBFB71-F760-16AF-DAF1-E92458B651B3</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC4AE6ED-E0C1-3CD5-B4BA-3841D157C716"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="교육기관" id="85D14D55-157F-70ED-1E25-4F28496FBCD9" version="3.5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:22:01 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>85D14D55-157F-70ED-1E25-4F28496FBCD9</designId>
+</OSDM_Design>

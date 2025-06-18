@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BD6C557A-4980-F406-DF80-4D60A0675186" containerWithKeyObject="9392BAE2-C374-E417-BC43-89D072D3579B" localFKIndex="4D16460C-1FAF-A184-2910-74451D46A170" name="학생_도시_FKv2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>75097833-3018-0A35-334A-03345C8574A2</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<referredTableLongName>도시</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B3B75D1-8F80-47F7-AA81-DCCF5708B676</referredTableID>
+<keyObject>712FB8A4-4E09-FA4C-82D3-F11841A946E1</keyObject>
+<referredKeyID>712FB8A4-4E09-FA4C-82D3-F11841A946E1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>도시코드</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

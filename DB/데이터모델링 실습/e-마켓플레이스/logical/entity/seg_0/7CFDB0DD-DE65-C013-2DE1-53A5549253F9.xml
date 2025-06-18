@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7CFDB0DD-DE65-C013-2DE1-53A5549253F9" name="강의실">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>BBF515DA-F9A0-D530-95D4-AD387F16DB21</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="강의실번호" id="4B3FC07A-A0C2-758C-C524-F73E6201BACA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>32EF3677-76F1-2B78-B126-E05E3F1420E5</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="시간" id="600D2D28-EA4E-48C5-A0E1-C7215A937B15">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>91AAB10A-30D9-539C-75EC-14A2A2DAF125</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="강의실명" id="EFDD18BD-33C2-22C0-AE20-E10A292613B4">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>CE0F668C-C059-60F1-AD56-669EB0DA0FE6</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="좌석수" id="EEB60B14-B540-F25B-69E0-55BECD9E626D">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>EA5349AF-E425-B7CC-4027-5C3090EED84E</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB71F163-3BB3-86D3-EBC8-1C9CCABDBC89" name="강의실 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>92D4CEB0-B8D1-57CD-6090-11783B74CB17</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B3FC07A-A0C2-758C-C524-F73E6201BACA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

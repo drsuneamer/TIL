@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADCCFC60-3217-3E77-964B-C60676EC6CCE" name="교수세부정보">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:10:57 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="교수번호" id="C15E828B-8E22-1EB1-12F4-C2A4F82986B9">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:45 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBBEDEC9-D4AC-9562-554C-5A1C940A35E2" referredColumn="4302C360-3EF8-0F73-A11B-24254A294CA2"/>
+</associations>
+</Column>
+<Column name="출생년도" id="78794D2D-2163-A61C-4EBB-CB25BF33C244">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:27 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성별" id="567205A3-CF53-1F21-C0E4-7496550C830A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:27 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="결혼여부" id="AC9EDEC6-EED0-3756-B278-1E29AD1D1008">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:27 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생_도시명" id="EAD36313-565A-6623-75C3-2C6172776A02">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:27 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생도시코드" id="4CE87FE3-5522-0FD3-FB21-C1550891F8B2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:14:09 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE65B11D-5200-12DE-3C45-48B7BADFB21C" referredColumn="7569D4AD-C375-3B7D-0821-59A732323537"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF892EA1-74D6-A42C-07A5-B1C7BEA787A1" name="교수세부정보_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:14:37 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C15E828B-8E22-1EB1-12F4-C2A4F82986B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D99C74B-541F-C3EC-8D8B-EFF63DB699DF" name="교수세부정보_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:11:45 UTC</createdTime>
+<generatorID>6E1A85C5-DEE7-C9AA-A6C0-04F08057475F</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C15E828B-8E22-1EB1-12F4-C2A4F82986B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF5BEECA-5051-4C8F-9E38-27F4B9DCC80F" name="교수세부정보_도시_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 05:14:09 UTC</createdTime>
+<generatorID>48002CF0-7013-E265-3D27-E3EF81823043</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CE87FE3-5522-0FD3-FB21-C1550891F8B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

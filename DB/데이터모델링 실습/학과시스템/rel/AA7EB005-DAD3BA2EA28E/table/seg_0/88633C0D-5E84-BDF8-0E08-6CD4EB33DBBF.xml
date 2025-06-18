@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88633C0D-5E84-BDF8-0E08-6CD4EB33DBBF" name="교수">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>96F2A1F1-D8F2-6E74-4813-6E3B307CE378</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<ordsAlias>a</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="교수번호" id="4302C360-3EF8-0F73-A11B-24254A294CA2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>90BE305F-D119-A6F2-CB68-44599B0EFB78</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성명" id="097CE3D3-1F53-FEAA-FA7C-2F4057817172">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>745C2F7A-CA85-BE52-B106-F3091DF5871F</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생년도" id="2FEB2379-E5E7-C9D9-7252-E6FC1A9FA0D0">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>D5496BF4-D9F6-745E-016F-417A1E2B27D9</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="소속학과" id="B5EDAAD6-8EAD-A3E9-F996-D86EA8BEFA59">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>9EDA2DD5-26EB-722C-C4A1-DA5D48500D4F</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="학과전화번호" id="03ACB43B-FDF5-4B4E-C7A1-F9619E0A83F7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>4ED8A2EB-0292-2C9A-9B59-1099596A55DF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="직위" id="44BE011F-2914-AB6F-FCC5-1217F73680C7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>E1E40E1C-0B2D-2D10-CC97-AF5D6363C7A3</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="결혼여부" id="68EC61B0-6334-6E30-B056-9E86B75ABF4E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>D45B6A22-D615-EE43-EF4C-AFF57E3DAA3E</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="연구분야" id="1DCEC62A-57F1-64D6-7D1F-CEA8D2554B3C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>2AD306E2-F2F7-9A5C-5E97-B39176468022</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D68705B-A0E9-B341-8A9E-132FE3FEDEEB" name="교수_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>6E1A85C5-DEE7-C9AA-A6C0-04F08057475F</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4302C360-3EF8-0F73-A11B-24254A294CA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="DF3C3438-F253-8004-8169-DBC861C4F61A" mainViewID="973CEB96-A96C-EDFD-A642-FE0C410388B9">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:28:43 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

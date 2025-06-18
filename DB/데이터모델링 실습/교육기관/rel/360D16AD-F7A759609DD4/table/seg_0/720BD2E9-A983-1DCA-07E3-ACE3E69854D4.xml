@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="720BD2E9-A983-1DCA-07E3-ACE3E69854D4" name="강의실">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>43209A38-F6DF-60C3-D3DE-5E7855044551</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<ordsAlias>r</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강의실번호" id="1B73EE42-49BD-5D2D-5400-BC4E0BBE91DD">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>1855F1D1-83D6-9911-566D-CCDDCC4DCD60</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="강의실명" id="886777CF-43C7-3D59-8F53-96CA29D273F5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 07:23:40 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19FEB00E-493E-DDAD-7D64-70E5F809D751" name="강의실_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>B8E85C73-7295-7D97-E095-094487DE766B</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B73EE42-49BD-5D2D-5400-BC4E0BBE91DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

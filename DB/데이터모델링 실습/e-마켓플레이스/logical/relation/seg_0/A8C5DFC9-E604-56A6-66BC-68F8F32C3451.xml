@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="개설" directorySegmentName="seg_0" id="A8C5DFC9-E604-56A6-66BC-68F8F32C3451">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>5593927F-96E6-4241-9C8F-FCB32D1E7241</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>18EA28EF-A3A0-B9D0-191C-E36147EC7A8F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7CFDB0DD-DE65-C013-2DE1-53A5549253F9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="개설일자" id="9324CAA2-8C9E-C15E-DF0F-FFB7D53431BC">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>F8E88E09-F4C2-88C9-8457-51AA90989ADF</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

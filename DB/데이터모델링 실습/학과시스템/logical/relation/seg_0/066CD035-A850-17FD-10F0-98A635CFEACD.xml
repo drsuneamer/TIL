@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="이수" directorySegmentName="seg_0" id="066CD035-A850-17FD-10F0-98A635CFEACD">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:02:40 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F0FDAC18-C020-2EAD-6032-89B2B0D6B4CD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3DCB6B76-37B6-0740-8F9A-49C711274D2F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="이수학점" id="592319AB-D8FC-B1FE-4A52-22D00088F59D">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:02:56 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="이수일자" id="B4FDF74B-5B47-5D43-4B0D-4C9C54BBBC66">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:02:59 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

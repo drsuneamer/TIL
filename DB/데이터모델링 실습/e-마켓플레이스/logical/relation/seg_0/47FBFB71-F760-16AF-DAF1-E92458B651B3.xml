@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="출생v1" directorySegmentName="seg_0" id="47FBFB71-F760-16AF-DAF1-E92458B651B3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>01665A18-7A62-DC45-9528-A1C17E368326</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<sourcePk>61B891FA-1A62-50BA-C42D-AEEB5E53EF42</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1AC6A908-8BF4-D168-065D-264904682D7E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D78E3F6F-2B84-0283-ADB2-D77A34EA4C6E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

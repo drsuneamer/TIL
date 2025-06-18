@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC04EAA6-7CE0-155C-F9C6-693BF9F6FBD6" name="선수과목">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<ordsAlias>pre_sub</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="과목_과목코드" id="79002C2F-D844-CFF2-E0E9-AA5CC48EC6F9">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77FA8962-65D7-4EFE-D399-C347EEAAADC3" referredColumn="60DCE277-D0DF-E83A-2BE6-DF10982D20C7"/>
+</associations>
+</Column>
+<Column name="선수과목_과목코드" id="5F0B294C-1777-F8CC-EC44-57D2677CB42B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82B7DE77-D946-0AA2-29CC-17F10FD1F39C" referredColumn="60DCE277-D0DF-E83A-2BE6-DF10982D20C7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38E1A785-4173-C38F-50F5-C09FE1FD2AF3" name="선수과목_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79002C2F-D844-CFF2-E0E9-AA5CC48EC6F9"/>
+<colUsage columnID="5F0B294C-1777-F8CC-EC44-57D2677CB42B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FF1E6CF-1A0D-EE16-CDEC-8C1ED7A58DE8" name="선수과목_과목_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>E5126E18-7A7D-79A9-892F-4D54EE9CE26B</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79002C2F-D844-CFF2-E0E9-AA5CC48EC6F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E3B1112-0146-356D-7375-BF70A0C02261" name="선수과목_과목_FKv1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>E5126E18-7A7D-79A9-892F-4D54EE9CE26B</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F0B294C-1777-F8CC-EC44-57D2677CB42B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

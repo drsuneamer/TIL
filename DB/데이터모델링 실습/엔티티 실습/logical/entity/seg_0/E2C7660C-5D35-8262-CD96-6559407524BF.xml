@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2C7660C-5D35-8262-CD96-6559407524BF" name="부양가족">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:18:42 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="가족이름" id="4122B9BC-2C19-6ED1-B7F9-0C1FE6662961">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:18:49 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관계" id="2167E987-E0C1-F059-3706-3795134DFD1C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:18:56 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="사번" id="375F55BD-092A-983A-8B53-69C0F27CD372">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:27:38 UTC</createdTime>
+<generatorID>9C75A01A-5507-5745-EC55-FB2381CDB30E</generatorID>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<referedAttribute>D72EE0E1-8E48-9687-8800-5506A7E94941</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0A64C451-A22F-5EFC-36AE-008C3DF52A70" name="부양가족 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:19:38 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4122B9BC-2C19-6ED1-B7F9-0C1FE6662961</attributeRef>
+<attributeRef>375F55BD-092A-983A-8B53-69C0F27CD372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

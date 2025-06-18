@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="811E7A24-EAC3-B4B9-3316-B68647B375DA" name="학생">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:23:12 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="주민등록번호" id="B1CC16F7-CCB9-DEBD-757A-B86A763FB308">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:23:17 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="이름" id="96F26AA8-D368-29E8-2364-10104CA1653B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:27:05 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="근무처" id="9DF99FAA-416E-7D2B-E097-520F111E3008">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:27:08 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="핸드폰번호" id="49CA3647-9287-7FA4-39E6-50F82454519C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:27:11 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="79DBF414-049A-E3A3-AD5F-5E8806A795C0" name="학생 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:23:18 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1CC16F7-CCB9-DEBD-757A-B86A763FB308</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

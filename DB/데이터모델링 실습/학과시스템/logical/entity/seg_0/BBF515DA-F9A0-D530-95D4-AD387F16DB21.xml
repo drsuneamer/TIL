@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBF515DA-F9A0-D530-95D4-AD387F16DB21" name="강의실">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:48:50 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="강의실번호" id="32EF3677-76F1-2B78-B126-E05E3F1420E5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:23:08 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="시간" id="91AAB10A-30D9-539C-75EC-14A2A2DAF125">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:48:54 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="강의실명" id="CE0F668C-C059-60F1-AD56-669EB0DA0FE6">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:23:13 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="좌석수" id="EA5349AF-E425-B7CC-4027-5C3090EED84E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:23:19 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92D4CEB0-B8D1-57CD-6090-11783B74CB17" name="강의실 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:23:12 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32EF3677-76F1-2B78-B126-E05E3F1420E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

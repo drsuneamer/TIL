@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="80729A67-EFBE-5154-463A-7D8EB5E0CFDF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:28:43 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

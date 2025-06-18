@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A3F9653-17D5-F20E-8605-E5066098A140" containerWithKeyObject="7CD0EBF8-B490-FA88-CBFA-9549FEDD36C9" localFKIndex="2C0069BC-8D63-02B9-A028-0757B275D3D3" name="평가_학생_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>9363F270-1D7F-DCB0-F51B-2B6013F82515</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<referredTableLongName>학생</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EF621559-9AEB-602E-66EE-DCC8D0F4F9D4</referredTableID>
+<keyObject>52CC9B60-EE57-557E-9B98-F3F469EFD15F</keyObject>
+<referredKeyID>52CC9B60-EE57-557E-9B98-F3F469EFD15F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>주민등록번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

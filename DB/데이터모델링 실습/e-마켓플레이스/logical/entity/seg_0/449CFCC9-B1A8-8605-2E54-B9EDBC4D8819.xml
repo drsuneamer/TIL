@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="449CFCC9-B1A8-8605-2E54-B9EDBC4D8819" name="샘플요청">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:35:32 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="샘플요청번호" id="A8548C82-0FC4-1D78-AFB7-4CF33F0D8643">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 06:08:07 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="제품제작사양서" id="8E57C59B-363D-B738-B350-C2A5C41D748C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:41:18 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="예상가격" id="1200ED36-734E-2673-C1A3-57DB7A842A31">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:41:25 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="샘플요청_회원ID" id="552D5D6E-B8E8-E91F-B650-362FA78F5CF3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 06:01:58 UTC</createdTime>
+<generatorID>CE7E6CC7-89CA-FD6F-791F-9BB589568B39</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<referedAttribute>AC5BC0A8-CC57-0B12-D9F8-2574C8D153E8</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="학생코드" id="43D510D4-4A98-476B-635A-FA24068F76F1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>CF47A9DC-5415-05E2-A5E6-257EADB071BA</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<referedAttribute>7182E5CC-2017-A559-7D2B-B813AFDC4DED</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BD78779C-750C-72DE-C0D1-9BEC3B8CF7CF" name="샘플요청 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 06:08:13 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A8548C82-0FC4-1D78-AFB7-4CF33F0D8643</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

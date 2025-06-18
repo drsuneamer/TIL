@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="080FA21D-C419-A82B-455F-605EE032CB0B" name="고객">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:45:55 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="고객명" id="4DF19E77-7CA9-1CE5-011E-C0E77669AF69">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:45:59 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order_id" id="1CE13618-5B96-19E9-6040-4F43DA004BE7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:46:13 UTC</createdTime>
+<generatorID>280F3A9C-B79C-E0E3-4D10-32C1F2CDAF65</generatorID>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<referedAttribute>F9EB1CB0-CEAD-22CE-94A1-905C44B6757C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="고객주소" id="DC948316-46CC-860A-6364-B234AC07A4A5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:46:16 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E58F9C38-3A4F-9269-06BD-FC413DA674DF" name="고객 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:46:02 UTC</createdTime>
+<ownerDesignName>정규화 실습</ownerDesignName>
+<engineerTo>
+<item key="0DC9ADAE-FEA1-7C65-9F93-AB4EE582AB95" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4DF19E77-7CA9-1CE5-011E-C0E77669AF69</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

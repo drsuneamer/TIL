@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAA4EE92-3C4A-BA2B-5B40-2424C0844D93" containerWithKeyObject="B277A34D-9FA4-5E6F-D5F6-0E272A9B2E4E" localFKIndex="721B4C34-BCC2-2B9A-F17A-91EB9FFB5F5C" name="개설_과목_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>5593927F-96E6-4241-9C8F-FCB32D1E7241</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<referredTableLongName>과목</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D3677C3E-18B2-EEDA-EF91-DA4043C5B967</referredTableID>
+<keyObject>3F36EB15-E294-F2EB-7F82-DF5C95186269</keyObject>
+<referredKeyID>3F36EB15-E294-F2EB-7F82-DF5C95186269</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>과목코드</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

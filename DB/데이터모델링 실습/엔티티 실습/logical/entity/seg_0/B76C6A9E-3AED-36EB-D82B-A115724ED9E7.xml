@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B76C6A9E-3AED-36EB-D82B-A115724ED9E7" name="사원">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 02:19:13 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="사번" id="D72EE0E1-8E48-9687-8800-5506A7E94941">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 02:19:50 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="이름" id="2EFE532B-EADB-C5D7-0748-83241C469AC6">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 02:19:59 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서번호" id="107839B8-96D2-0A89-9E75-BDF3AAF3EFEA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 02:29:40 UTC</createdTime>
+<generatorID>1D3B96D8-EB0A-9FDE-924B-07D8FFDEBABC</generatorID>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<referedAttribute>C9D98CE0-7FEE-C8E7-67C3-A7C2927818D3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="관리자사번" id="561B0F3E-3C60-D866-524C-E55040610005">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:26:15 UTC</createdTime>
+<generatorID>3CF22D52-0022-A858-C693-55418FFCBBA8</generatorID>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D72EE0E1-8E48-9687-8800-5506A7E94941</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47BB8D22-ACD4-F367-BDE5-F86D3A7D52F7" name="사원 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:16:03 UTC</createdTime>
+<ownerDesignName>엔티티 실습</ownerDesignName>
+<engineerTo>
+<item key="E3BB7D0E-DD69-DCE1-DB54-A81D07E99B9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D72EE0E1-8E48-9687-8800-5506A7E94941</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

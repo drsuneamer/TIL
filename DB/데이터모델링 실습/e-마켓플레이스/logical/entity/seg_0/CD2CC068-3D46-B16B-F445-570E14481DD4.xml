@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD2CC068-3D46-B16B-F445-570E14481DD4" name="견적요청">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:35:20 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="납기 가능일" id="65D6F738-3278-994F-2847-493445621A0E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:36:14 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="견적 요청 마감일" id="85E909C8-66FF-31C1-B1C9-2F2D870890C3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:36:18 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="견적요청담당자" id="9362C5B0-AEF1-572E-E1DD-D8499D8F0CFC">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 06:09:31 UTC</createdTime>
+<generatorID>64F31A34-D3CA-5369-C5F2-49DF76863F0D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<referedAttribute>AC5BC0A8-CC57-0B12-D9F8-2574C8D153E8</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

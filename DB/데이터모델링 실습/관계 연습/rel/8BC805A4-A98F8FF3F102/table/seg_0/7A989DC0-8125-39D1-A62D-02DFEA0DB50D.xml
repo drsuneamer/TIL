@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A989DC0-8125-39D1-A62D-02DFEA0DB50D" name="상품">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>C40624AA-935F-0343-A147-77F190FBEF78</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="상품번호" id="5FD788B5-C2C5-5656-8B02-9E3EAA2FC8B4">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>7E351F06-D0FA-53E5-8A75-5B7956AEF98B</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="상품명" id="CE07041E-0F90-9250-DD9C-371201F720CE">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>F5156334-8D4F-0BED-21DB-43324F418173</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A4430FB-71C8-A746-C2A5-BC8DFAF67ABA" name="상품_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>4CBB4279-D452-E521-F62E-B69CCF09F7EA</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FD788B5-C2C5-5656-8B02-9E3EAA2FC8B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

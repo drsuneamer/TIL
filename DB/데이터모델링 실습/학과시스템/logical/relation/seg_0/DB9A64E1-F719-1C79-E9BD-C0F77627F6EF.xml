@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="지도" directorySegmentName="seg_0" id="DB9A64E1-F719-1C79-E9BD-C0F77627F6EF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:05:43 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<sourcePk>6E1A85C5-DEE7-C9AA-A6C0-04F08057475F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>96F2A1F1-D8F2-6E74-4813-6E3B307CE378</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6ADE80F0-F710-581B-9201-DD1AE00FC96E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

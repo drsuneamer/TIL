@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="정규화 실습 2" id="A7A3DB03-A4FE-0642-65E7-6AAD74E6FEBD" version="3.5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 01:48:41 UTC</createdTime>
+<ownerDesignName>정규화 실습 2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A7A3DB03-A4FE-0642-65E7-6AAD74E6FEBD</designId>
+</OSDM_Design>

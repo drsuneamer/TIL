@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EDE561E-4DC8-43E6-7B20-FE7FD7301A56" name="샘플요청서">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:49:22 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="샘플요청번호" id="16A6FF05-7CD8-4502-FDCA-10A8F1F6AC29">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:55:16 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="회원_회원ID" id="28E6B902-AFC5-3670-F9DB-9E0D74CB8786">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:55:05 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35A3BE98-1D39-49D3-535E-E9CFD1256C38" referredColumn="414095AE-4788-6356-3566-10C491C7F976"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="379A5731-4BEF-0110-234B-EE8D856F6CE2" name="샘플요청서_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:55:16 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16A6FF05-7CD8-4502-FDCA-10A8F1F6AC29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30A92DAF-B22B-FF9F-D153-37CDE69DB132" name="샘플요청서_회원_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:55:05 UTC</createdTime>
+<generatorID>0DE45960-6882-37CD-46B5-BDC7B821C593</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28E6B902-AFC5-3670-F9DB-9E0D74CB8786"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

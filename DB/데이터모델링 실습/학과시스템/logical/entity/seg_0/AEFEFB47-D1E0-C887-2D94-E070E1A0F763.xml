@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AEFEFB47-D1E0-C887-2D94-E070E1A0F763" name="박사">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:46:36 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="학생코드" id="4B1A442E-649F-5538-1B68-0C71B7F124DF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:22:47 UTC</createdTime>
+<generatorID>10EA8C9F-DE56-93AA-1D39-F5267284AEF6</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<referedAttribute>9494B8BF-7CEA-5A29-6C2F-FCA522C4DA26</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="논문제목" id="39E7680D-EBDE-5CF9-9FC6-B396A26BCEBA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:48:39 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="연구분야" id="7D2ED279-3E1B-2822-B222-9B23A35844A7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:48:43 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74D96821-B81C-ADB8-532E-3B41CF2980E7" name="박사 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:22:52 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B1A442E-649F-5538-1B68-0C71B7F124DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

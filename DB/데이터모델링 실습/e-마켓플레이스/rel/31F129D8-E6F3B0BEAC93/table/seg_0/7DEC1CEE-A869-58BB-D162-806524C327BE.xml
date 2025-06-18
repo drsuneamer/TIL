@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DEC1CEE-A869-58BB-D162-806524C327BE" name="기업">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>A3A1C04B-BE4E-4398-F30F-86C8BB36C74E</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="기업ID" id="5AC78007-1C7A-1863-2590-405CEB393614">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>6EBA9C52-4AF5-D9E7-CCD7-4EB89A63425D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="기업명" id="F5972BD2-03CF-EF48-DAFB-34B7BF854B55">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>EC364C01-AC84-F244-6122-D3AA4F496788</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="주소" id="2B1769D6-E75F-32B5-94D9-2B0B3F9FB16F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>59BEF081-4597-4177-2387-4FB09CE23250</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="전화번호" id="D3CFA2B2-C43D-3929-A3A7-0394E23A0E7B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>03991C9F-36C7-FAD0-F636-A965045B0615</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="팩스번호" id="8A06C00D-8D1B-4B98-94EA-DB6014EFA67C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>411583F6-F4B4-D633-C419-87232A9F1A2F</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="사업자등록번호" id="824A5F35-E16E-0EED-14E1-A5E15F3F08A0">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>52DC37BD-D7F4-4728-9010-8F1E406A5C74</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="대표자명" id="CCD5E5ED-ED83-011D-FA18-99686C8D2B64">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>CE98A455-561D-D3FB-0676-729033266DD0</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="가입일자" id="5F8C7AE8-B48A-83CE-C4E4-1F176DB6053C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>72DF669C-9C1B-AEEC-3598-24F4A25A79D5</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02E52977-AADA-52C9-7370-918E8DC31690" name="기업_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>40CE99DA-1DE0-2C4B-E596-51E4AC3D9347</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AC78007-1C7A-1863-2590-405CEB393614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DBC866E-ECF4-A05D-83E8-CAF35EF212ED" name="도시">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>1AC6A908-8BF4-D168-065D-264904682D7E</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>0B3B75D1-8F80-47F7-AA81-DCCF5708B676</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="도시코드" id="6EE20F48-EA76-6696-88F4-B4E96D958F2A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>8731E09C-54BE-54FE-A02D-5737BDFFBE70</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>7569D4AD-C375-3B7D-0821-59A732323537</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="도시명" id="24A10766-A6C2-8397-1458-305007E3BF0A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>764B6C84-4682-3B0A-A03F-E493FDC21FBD</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>3E6E2E4B-623E-BADF-381C-0F78EDA89427</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C24AB63-12B1-4E72-26AF-84B5345AEB5A" name="도시_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>61B891FA-1A62-50BA-C42D-AEEB5E53EF42</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>712FB8A4-4E09-FA4C-82D3-F11841A946E1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EE20F48-EA76-6696-88F4-B4E96D958F2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

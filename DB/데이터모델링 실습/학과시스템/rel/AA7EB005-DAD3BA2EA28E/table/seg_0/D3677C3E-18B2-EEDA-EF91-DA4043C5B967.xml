@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3677C3E-18B2-EEDA-EF91-DA4043C5B967" name="과목">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>3DCB6B76-37B6-0740-8F9A-49C711274D2F</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="과목코드" id="AC5D3328-086E-25A5-8BE2-0D03E024E8A8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>5E4F674A-4ECB-2F5E-1C52-332E9E57D1B9</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="과목이름" id="90E50661-417A-8AA6-F310-F27432D3A699">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>C2667F0E-0537-E749-670A-B45DD08A7FB2</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="교수_교수번호" id="FD9BE1A3-DD0B-1D51-F2B8-F08B92216496">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>4080652B-108A-1409-56C6-7BC02902B059</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BF6C5CC-1755-E088-52FB-EDD90E76A690" referredColumn="4302C360-3EF8-0F73-A11B-24254A294CA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F36EB15-E294-F2EB-7F82-DF5C95186269" name="과목_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>25D437AA-E2F4-12AC-0D66-750BBBA477D9</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC5D3328-086E-25A5-8BE2-0D03E024E8A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC566599-09B9-9F95-BF8B-63DA946BD622" name="과목_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>54A33625-38CB-F9E9-9087-A5E16741F9CF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD9BE1A3-DD0B-1D51-F2B8-F08B92216496"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="E97328C1-F905-4CCF-77B4-E7F97D92CE2F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:50:27 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A3A1C04B-BE4E-4398-F30F-86C8BB36C74E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A3649EE5-C77C-9E52-CC13-2A7CDE31F535</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="거래종료일자" id="5983D0EC-A443-7837-E03E-3651E0309BBF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:50:29 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="구매/판매구분" id="19BDEA3A-C877-C5A2-0561-EBEBE3E333EF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:50:33 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

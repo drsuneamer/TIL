@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C71CE89-4018-5A19-FADE-F67912869082" name="강사">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>67E764C2-5441-57FB-4406-39B4161E57F7</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강사번호" id="DBB21A05-52B4-3891-3B70-B8E5DC2F27AA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>F6727347-308B-C8C0-7B42-C42277754872</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이름" id="F7C5A04B-5BFF-609E-1C54-8DEC192C81E1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>3C68D453-1E15-1E5F-205C-B95674D805F2</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="핸드폰번호" id="940EE60B-512B-6B24-1E33-AA9809965B2C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>9A357243-F40B-D564-BA4B-BCCA446F9748</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C96B1B56-021A-D076-8435-E8459093DAC3" name="강사_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>AD6789B7-186C-402C-22C7-70C74A88EA4D</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB21A05-52B4-3891-3B70-B8E5DC2F27AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

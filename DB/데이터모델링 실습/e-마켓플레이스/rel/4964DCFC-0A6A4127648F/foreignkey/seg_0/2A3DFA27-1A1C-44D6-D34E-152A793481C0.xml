@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A3DFA27-1A1C-44D6-D34E-152A793481C0" containerWithKeyObject="A18407CD-3122-51EB-03B6-3463F97A8072" localFKIndex="9C22E9F5-1369-FBF2-2518-1EFC5BA84EFE" name="대학원생_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>63BAFB8B-01C4-9A68-0C3D-231BB3FB8C6A</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>D9181B14-FC17-BBEC-CAF4-6C64504F3EE5</importedID>
+<referredTableLongName>교수</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E88EC9CD-7C4C-D051-A219-9B151CB8CB7B</referredTableID>
+<keyObject>FF7D05B1-B916-A06C-9D73-9E3B9F444677</keyObject>
+<referredKeyID>FF7D05B1-B916-A06C-9D73-9E3B9F444677</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>교수번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

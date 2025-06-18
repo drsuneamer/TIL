@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="96F2A1F1-D8F2-6E74-4813-6E3B307CE378" name="교수">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:46:59 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="교수번호" id="90BE305F-D119-A6F2-CB68-44599B0EFB78">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:24:10 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="성명" id="745C2F7A-CA85-BE52-B106-F3091DF5871F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:03 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="출생년도" id="D5496BF4-D9F6-745E-016F-417A1E2B27D9">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:05 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="소속학과" id="9EDA2DD5-26EB-722C-C4A1-DA5D48500D4F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:10 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="학과전화번호" id="4ED8A2EB-0292-2C9A-9B59-1099596A55DF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:12 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="직위" id="E1E40E1C-0B2D-2D10-CC97-AF5D6363C7A3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:17 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="결혼여부" id="D45B6A22-D615-EE43-EF4C-AFF57E3DAA3E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:20 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="연구분야" id="2AD306E2-F2F7-9A5C-5E97-B39176468022">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 04:47:25 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="도시코드" id="5D44110B-BF3B-DD7C-5D20-A0CC09F3E262">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:21:29 UTC</createdTime>
+<generatorID>01665A18-7A62-DC45-9528-A1C17E368326</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<referedAttribute>43030385-E48E-FA1A-C6BC-F7ED20062B46</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6E1A85C5-DEE7-C9AA-A6C0-04F08057475F" name="교수 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:24:13 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>90BE305F-D119-A6F2-CB68-44599B0EFB78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

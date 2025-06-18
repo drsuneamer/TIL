@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="지도" directorySegmentName="seg_0" id="63BAFB8B-01C4-9A68-0C3D-231BB3FB8C6A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>DB9A64E1-F719-1C79-E9BD-C0F77627F6EF</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<sourcePk>E34759EF-B1C8-4705-0680-BAF53ECDE177</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D78E3F6F-2B84-0283-ADB2-D77A34EA4C6E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EF26E5CF-5AC8-B82F-89FA-B134DCB03A5B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

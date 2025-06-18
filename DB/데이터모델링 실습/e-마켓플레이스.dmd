@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="e-마켓플레이스" id="0F08298F-6C17-CF09-9C82-7EBB213E509A" version="3.5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:28:43 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0F08298F-6C17-CF09-9C82-7EBB213E509A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="941D6FAB-60A0-1B84-06AB-1663240FDCC6">
+<designStoragePath>C:\Users\User\Desktop\데이터모델링 실습\학과시스템</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

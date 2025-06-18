@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="수강" directorySegmentName="seg_0" id="2284E00E-A881-DAEE-4B48-11D4B9C582E3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>C7741A90-7C9A-6082-1E16-7D26EE97EA3C</importedID>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F46DB919-2EED-09FA-9C3C-5CF10252B0D5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18EA28EF-A3A0-B9D0-191C-E36147EC7A8F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

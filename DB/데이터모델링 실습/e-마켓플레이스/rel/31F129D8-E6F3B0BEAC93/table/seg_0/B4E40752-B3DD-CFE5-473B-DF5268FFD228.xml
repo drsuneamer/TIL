@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4E40752-B3DD-CFE5-473B-DF5268FFD228" name="거래업체">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:48:18 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="회원ID" id="D6331CB6-9BCC-45A6-E772-53930E755B5E">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:51:21 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B5622A9-5985-A215-8C28-7E32BBE2EB66" referredColumn="414095AE-4788-6356-3566-10C491C7F976"/>
+</associations>
+</Column>
+<Column name="기업ID" id="1E0AF9D3-BBB1-0AC1-38C1-A7F83B1D5944">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:51:33 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E4B2C33-615B-FC07-4061-42B56B86B145" referredColumn="5AC78007-1C7A-1863-2590-405CEB393614"/>
+</associations>
+</Column>
+<Column name="거래_구분" id="AC9AB90E-74FD-6B24-409E-EF990467CBD4">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:49:48 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="거래_시작일자" id="D5ABEA6B-5967-4FEE-C90D-A81E027A720C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:49:01 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="거래_종료일자" id="53878DE6-DBC1-80F8-7CFB-C76898D09108">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 04:09:35 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D517D6B-0B6A-54FC-018B-735FF4936C63" name="거래업체_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:49:48 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6331CB6-9BCC-45A6-E772-53930E755B5E"/>
+<colUsage columnID="1E0AF9D3-BBB1-0AC1-38C1-A7F83B1D5944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79965C20-A278-2326-543B-F33E1385790F" name="거래업체_회원_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:51:21 UTC</createdTime>
+<generatorID>0DE45960-6882-37CD-46B5-BDC7B821C593</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6331CB6-9BCC-45A6-E772-53930E755B5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B36E6A84-CD35-D044-31C6-E8361CADB81B" name="거래업체_기업_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:51:33 UTC</createdTime>
+<generatorID>40CE99DA-1DE0-2C4B-E596-51E4AC3D9347</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E0AF9D3-BBB1-0AC1-38C1-A7F83B1D5944"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

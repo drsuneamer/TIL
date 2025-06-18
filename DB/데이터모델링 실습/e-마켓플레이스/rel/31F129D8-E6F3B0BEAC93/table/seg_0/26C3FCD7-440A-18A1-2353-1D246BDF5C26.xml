@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26C3FCD7-440A-18A1-2353-1D246BDF5C26" name="주문_상품">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 08:17:14 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="주문_주문번호" id="0D3A376D-87F9-DC5C-9863-3FCFEC6F9100">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:52:40 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28A3409B-DEDE-9333-A47F-7566ABB9EB91" referredColumn="60357751-EA5A-16BF-F696-0B668FFE03E7"/>
+</associations>
+</Column>
+<Column name="상품_상품번호" id="21AB4536-DF75-907A-1CB9-512F8C894687">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:52:15 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D76D0D51-F928-2A80-0D41-600E8522F68E" referredColumn="588E8CC4-E29C-F5C1-81D3-499B101C0D6A"/>
+</associations>
+</Column>
+<Column name="수량" id="4BD38C8C-17D1-E036-7C19-5EBD604E3D08">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 04:12:42 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56D7AC49-6AB2-33B3-DD1A-AB1C6BB308F1" name="주문_상품_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:59:23 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D3A376D-87F9-DC5C-9863-3FCFEC6F9100"/>
+<colUsage columnID="21AB4536-DF75-907A-1CB9-512F8C894687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD9A51CC-24A7-7849-CA4A-E8407BF8FF6F" name="주문_상품_상품_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:52:15 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21AB4536-DF75-907A-1CB9-512F8C894687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="964EEB2D-2156-8285-16EF-E1DA587B12B2" name="주문_상품_주문_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:52:40 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D3A376D-87F9-DC5C-9863-3FCFEC6F9100"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

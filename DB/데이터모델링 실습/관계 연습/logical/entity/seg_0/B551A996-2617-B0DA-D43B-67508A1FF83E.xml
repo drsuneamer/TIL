@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B551A996-2617-B0DA-D43B-67508A1FF83E" name="고객">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:03:01 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="고객번호" id="84FA7308-679E-4945-B300-37D2A121DF8A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:03:08 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="고객명" id="9ED3C9A0-2773-AE1B-4D0F-9CD269252D4F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:03:24 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="324FB7C3-73E8-1368-F38A-71A65EEA1A7B" name="고객 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:03:17 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>84FA7308-679E-4945-B300-37D2A121DF8A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

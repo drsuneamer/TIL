@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="55F821C5-7187-4C56-DDFF-3B906168A93C" name="과목" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="70B619D1-E7E4-2B2F-EC1F-20AEB72CC5FC" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B551A996-2617-B0DA-D43B-67508A1FF83E" name="고객" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="70B619D1-E7E4-2B2F-EC1F-20AEB72CC5FC" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="C40624AA-935F-0343-A147-77F190FBEF78" name="상품" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="70B619D1-E7E4-2B2F-EC1F-20AEB72CC5FC" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="6CA35322-42AB-E751-4E24-CCDBC1FEB572" name="주문" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="70B619D1-E7E4-2B2F-EC1F-20AEB72CC5FC" propertySourceId="B551A996-2617-B0DA-D43B-67508A1FF83E" propertyTargetId="C40624AA-935F-0343-A147-77F190FBEF78"/>
+   <object objectType="Relation" objectID="E5126E18-7A7D-79A9-892F-4D54EE9CE26B" name="선수과목" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="70B619D1-E7E4-2B2F-EC1F-20AEB72CC5FC" propertySourceId="55F821C5-7187-4C56-DDFF-3B906168A93C" propertyTargetId="55F821C5-7187-4C56-DDFF-3B906168A93C"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

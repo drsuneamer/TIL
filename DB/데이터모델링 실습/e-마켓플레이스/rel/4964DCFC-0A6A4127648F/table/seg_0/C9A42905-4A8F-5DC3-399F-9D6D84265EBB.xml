@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9A42905-4A8F-5DC3-399F-9D6D84265EBB" name="학생">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>F46DB919-2EED-09FA-9C3C-5CF10252B0D5</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>9392BAE2-C374-E417-BC43-89D072D3579B</importedID>
+<ordsAlias>a</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="학생코드" id="7AA9A9C9-A704-77B3-BA0E-97961FA3FA51">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>DE8AE6DE-25AF-2BB7-24FC-AD26756E4C78</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>251400B1-CCD0-9BC8-0A44-74819A9987E2</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성명" id="A40B884C-CBCD-7A16-B08C-980D833E71C0">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>72B5A7E8-4172-F796-EB3B-1CEF0551508D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>3BF31320-A223-192B-CA2F-F4D1277BCE5A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생년도" id="43C8C0F6-C606-8D0A-8C96-3C87DE65D523">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>9EBE4FB0-08C4-3CE0-2595-7A0F00A7918E</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>CFD6A9F9-7627-9153-0608-39DC174EF837</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성별" id="ECB5181C-3473-469A-875F-66EE30299E91">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>FBAED959-85B2-1D28-BA5D-C5EA1374C0D1</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>5E879F2F-E735-ACA8-2703-A4BE158AAF89</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생_도시코드" id="E90A6623-DE9E-38EB-4D57-389F2C524BCD">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>BC340795-87CA-7627-35E5-5F649B357942</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>3E4A6AC3-7377-B25B-FAC3-2A77E65A5991</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B21A0B7-75E3-4D96-86CB-3A43F85ABCB1" referredColumn="6EE20F48-EA76-6696-88F4-B4E96D958F2A"/>
+</associations>
+</Column>
+<Column name="거주_도시코드" id="59592DF4-94C6-0C78-8503-78B9493407C0">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>F955FD43-366B-6855-A49B-81789D3F27D4</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>BE03CE63-DB57-4E50-93FE-CE4243EFF2F1</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B18C7188-2D23-5421-63DF-5DD52E4E857B" referredColumn="6EE20F48-EA76-6696-88F4-B4E96D958F2A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15550D77-7E28-4FBE-E684-8E5024700195" name="학생_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>06598782-B441-38A0-34B0-41EEE50EB9A5</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>4E233D1F-4850-36AF-ECD8-6FB2CC4CD791</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AA9A9C9-A704-77B3-BA0E-97961FA3FA51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57AFB036-D90D-3324-5066-C0BC6693FFB3" name="학생_도시_FKv2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>35857766-5D4E-9036-38DE-94375E1232F4</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59592DF4-94C6-0C78-8503-78B9493407C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A60C5E04-4A7A-E47A-AFC1-99189FE768EB" name="학생_도시_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>9047F343-0993-00D0-ADBB-C926BC691A39</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E90A6623-DE9E-38EB-4D57-389F2C524BCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9181B14-FC17-BBEC-CAF4-6C64504F3EE5" containerWithKeyObject="E8228763-B4BF-E6D1-9B73-F8826D5CAE00" localFKIndex="74529AB4-0442-1CCF-DFB1-2329422E1222" name="대학원생_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>DB9A64E1-F719-1C79-E9BD-C0F77627F6EF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<referredTableLongName>교수</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88633C0D-5E84-BDF8-0E08-6CD4EB33DBBF</referredTableID>
+<keyObject>4D68705B-A0E9-B341-8A9E-132FE3FEDEEB</keyObject>
+<referredKeyID>4D68705B-A0E9-B341-8A9E-132FE3FEDEEB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>교수번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

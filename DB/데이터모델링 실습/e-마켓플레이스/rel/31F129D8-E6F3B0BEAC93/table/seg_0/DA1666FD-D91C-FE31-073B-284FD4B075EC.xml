@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA1666FD-D91C-FE31-073B-284FD4B075EC" name="카탈로그">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>26F38557-0A77-407D-850C-4D88AF9B6A70</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<ordsAlias>c</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="제품ID" id="6BAA3A4E-C3F8-2323-3FFB-F85BCB3E3C15">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>FDEDE26A-9054-F252-FA17-482253C75F74</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="제품명" id="FE97034F-F9B9-3F34-24E4-48D36482BF69">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>EB2609B0-CDA7-34E8-7DA1-ABC9FB2D01E1</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="387BE1C5-360C-1040-902C-4D547299363D" name="카탈로그_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>5BD47AAC-5832-2ADD-6ABC-ECC6A2A9E2EF</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BAA3A4E-C3F8-2323-3FFB-F85BCB3E3C15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26B7C2C3-C74D-BED6-D0A6-D94EC26D0A30" name="과목">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>2FB36559-6033-1307-D099-A68D69672964</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="과목코드" id="A60E2CCD-F50C-5798-F8C2-DA72AEC95BCA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>16A34B5B-3ACE-A856-B4D0-07990870FA41</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="과목_과목코드" id="076F39E5-BC11-1CB8-A106-D15935CE4BA7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>F608CD2A-9707-7147-A24A-AA9590230D4B</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD771502-8700-482B-08A5-7C0B799E6787" referredColumn="A60E2CCD-F50C-5798-F8C2-DA72AEC95BCA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71DF3BB0-3206-A6E7-ECDD-F6AA96344646" name="과목_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>C75AB85E-C11D-8DA4-DA89-08DC28309649</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A60E2CCD-F50C-5798-F8C2-DA72AEC95BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEDE6333-C1CC-76C0-8707-D4DF072407B9" name="과목_과목_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>25F8C46B-05D0-F0CF-1924-E6504031878F</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076F39E5-BC11-1CB8-A106-D15935CE4BA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70630050-AB70-422C-3325-77A175FBE3AA" name="강의실">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>7CFDB0DD-DE65-C013-2DE1-53A5549253F9</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>8CE397E0-E6CB-0A5A-7687-9B0648C7B0C0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="강의실번호" id="BDE8A300-FDAF-20E7-889F-92AA6B79FCF1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>4B3FC07A-A0C2-758C-C524-F73E6201BACA</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>AC61BE59-F06A-D082-6366-693D1A8572A1</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="시간" id="D453FE81-AE06-878C-D7EC-136D8181D478">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>600D2D28-EA4E-48C5-A0E1-C7215A937B15</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>B4057793-29E0-F860-558D-753EF29D5F92</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="강의실명" id="C542A52C-6CBD-54EA-3F81-7EB7F130CCFB">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>EFDD18BD-33C2-22C0-AE20-E10A292613B4</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>8288AA46-384C-900D-030E-72507779E6B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="좌석수" id="FE071096-AA98-C8F4-7B83-F5CC85C3CA41">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>EEB60B14-B540-F25B-69E0-55BECD9E626D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>7F13D750-DA41-BBB6-5041-7DE35D30E7DE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05A139F2-3EEB-2EC6-E9FF-95A72B9AE3D2" name="강의실_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>AB71F163-3BB3-86D3-EBC8-1C9CCABDBC89</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>1A1D4682-416D-9E2A-470B-B232A72A033B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDE8A300-FDAF-20E7-889F-92AA6B79FCF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

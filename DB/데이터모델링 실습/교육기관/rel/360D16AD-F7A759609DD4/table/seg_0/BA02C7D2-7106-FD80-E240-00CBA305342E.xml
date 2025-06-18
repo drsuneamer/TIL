@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA02C7D2-7106-FD80-E240-00CBA305342E" name="과정">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>E988927D-CE42-8B34-F809-15EBFFC5E664</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<ordsAlias>l</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="과정코드" id="F90CBFE0-097D-E561-EF07-4267DB076499">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>1AB157A5-B217-E8F8-3E4F-EA85FF7234E8</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="개설기간" id="888EA8BA-E34E-B501-C4AA-2BFBADD93E81">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>28C7621C-1C86-C61A-5465-722D0FA53091</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="수업일수" id="0D691C32-0DE4-6364-812C-6FFDB1A7BB92">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>FFAA9E3F-F32B-EFD8-6B71-92B4652514F7</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="과정명" id="3CFEF0FB-0E87-42D5-D4B6-9C69A0D28BF2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>925A0EE7-61A1-8A6A-B59D-CF57400F34F6</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="수업료" id="91D5D8E1-1724-6459-14F2-C704853E0FA1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>FB3D57B4-2745-3A21-2707-8A8898361146</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="과정구분" id="531E1CED-4BC2-1EA0-5E57-D0A0F4E392B8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 07:02:47 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="강의실_강의실번호" id="9690A92A-605E-8C81-A866-2D5B3CB35D96">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>45CC1EF6-5452-7E73-586E-8D4C262A7E5D</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC23DB29-5CBB-B793-B1DB-92D9CCEAEFEF" referredColumn="1B73EE42-49BD-5D2D-5400-BC4E0BBE91DD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A6F6A90-B734-8DB0-6422-1D83340EAF89" name="과정_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>39B93843-1281-884D-B7FA-B1F59C64F64D</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F90CBFE0-097D-E561-EF07-4267DB076499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D22F455-368F-8A7A-852F-1EB919C29073" name="과정_강의실_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:38:10 UTC</createdTime>
+<generatorID>DE2781D1-9DC2-F083-5EF6-3FE0EFC743FC</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9690A92A-605E-8C81-A866-2D5B3CB35D96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

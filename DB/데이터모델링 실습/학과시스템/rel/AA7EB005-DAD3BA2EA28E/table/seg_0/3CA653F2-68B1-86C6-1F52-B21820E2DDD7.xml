@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CA653F2-68B1-86C6-1F52-B21820E2DDD7" name="박사">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>AEFEFB47-D1E0-C887-2D94-E070E1A0F763</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="대학원생_학생_학생코드" id="FF3168F0-726C-DB32-788D-6FA61D6206DF">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>4B1A442E-649F-5538-1B68-0C71B7F124DF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B36CC6E4-D03B-D057-C8C8-DE68C26E0875" referredColumn="BED9F573-06AB-762A-14D8-AA3637307AD7"/>
+</associations>
+</Column>
+<Column name="논문제목" id="09F1CF93-7FE8-8440-C43E-6CE8BE2EA2F3">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>39E7680D-EBDE-5CF9-9FC6-B396A26BCEBA</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="연구분야" id="12E39D58-C7A1-9D2E-06F9-21967490737A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>7D2ED279-3E1B-2822-B222-9B23A35844A7</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B696B492-C82D-C704-EB57-0A07242D317F" name="박사_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>74D96821-B81C-ADB8-532E-3B41CF2980E7</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF3168F0-726C-DB32-788D-6FA61D6206DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="078502BB-3527-EEF1-8DA9-CC40D253E845" name="박사_대학원생_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>10EA8C9F-DE56-93AA-1D39-F5267284AEF6</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF3168F0-726C-DB32-788D-6FA61D6206DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FAC965DB-A115-7301-513A-B3CDDB81E708" containerWithKeyObject="E00B3B39-F27C-786C-8D90-E88EADC3E64C" localFKIndex="4BA50797-52FF-C3DA-8483-17A074722881" name="상품_회원_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 00:54:27 UTC</createdTime>
+<generatorID>0DE45960-6882-37CD-46B5-BDC7B821C593</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<referredTableLongName>회원</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1CAA1FDF-42B9-178E-AE89-EF78A78632E2</referredTableID>
+<keyObject>BCF7A2AF-0F30-F145-9014-2342E69367AD</keyObject>
+<referredKeyID>BCF7A2AF-0F30-F145-9014-2342E69367AD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>회원ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

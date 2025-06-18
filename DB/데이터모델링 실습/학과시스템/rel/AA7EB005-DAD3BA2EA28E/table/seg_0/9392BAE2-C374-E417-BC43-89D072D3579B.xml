@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9392BAE2-C374-E417-BC43-89D072D3579B" name="학생">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>F0FDAC18-C020-2EAD-6032-89B2B0D6B4CD</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<ordsAlias>a</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="학생코드" id="251400B1-CCD0-9BC8-0A44-74819A9987E2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>B851AB6B-4D8A-E1BE-9EAE-213E3188BDAE</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성명" id="3BF31320-A223-192B-CA2F-F4D1277BCE5A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>BF89DA9A-C610-EE11-3077-39CFF7288E08</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생년도" id="CFD6A9F9-7627-9153-0608-39DC174EF837">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>8F9E352F-18BA-543D-AF63-282F3963EF80</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성별" id="5E879F2F-E735-ACA8-2703-A4BE158AAF89">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>C31BD482-D1B4-E756-E035-88C2AC04ACAC</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출생_도시코드" id="3E4A6AC3-7377-B25B-FAC3-2A77E65A5991">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>44E2F8E8-E088-E1A1-8C8B-D3A299F10553</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0D3F8CD-B92A-30B5-DEAE-7C95F3E33130" referredColumn="7569D4AD-C375-3B7D-0821-59A732323537"/>
+</associations>
+</Column>
+<Column name="거주_도시코드" id="BE03CE63-DB57-4E50-93FE-CE4243EFF2F1">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>421F85E2-85A3-FE6A-070A-3CFE552148FA</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD6C557A-4980-F406-DF80-4D60A0675186" referredColumn="7569D4AD-C375-3B7D-0821-59A732323537"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E233D1F-4850-36AF-ECD8-6FB2CC4CD791" name="학생_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>20BE5B0F-657B-3317-F0CF-87202CC5E9DA</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="251400B1-CCD0-9BC8-0A44-74819A9987E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAF4B643-9D54-CBA9-A9E4-7596EECBF812" name="학생_도시_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>B0CFA906-4F9C-8877-379E-32D19128BAB4</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E4A6AC3-7377-B25B-FAC3-2A77E65A5991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D16460C-1FAF-A184-2910-74451D46A170" name="학생_도시_FKv2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>75097833-3018-0A35-334A-03345C8574A2</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE03CE63-DB57-4E50-93FE-CE4243EFF2F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

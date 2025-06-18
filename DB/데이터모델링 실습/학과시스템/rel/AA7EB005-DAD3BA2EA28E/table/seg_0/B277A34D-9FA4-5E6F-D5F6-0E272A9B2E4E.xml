@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B277A34D-9FA4-5E6F-D5F6-0E272A9B2E4E" name="개설">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="과목_과목코드" id="49871B59-3CCE-D4BA-1D36-D03916CE8039">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAA4EE92-3C4A-BA2B-5B40-2424C0844D93" referredColumn="AC5D3328-086E-25A5-8BE2-0D03E024E8A8"/>
+</associations>
+</Column>
+<Column name="강의실_강의실번호" id="1F10342F-46CF-DB9B-1692-CBECFB3B6DE5">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82FA066E-331E-EC7A-460C-A35ABBA4E62B" referredColumn="AC61BE59-F06A-D082-6366-693D1A8572A1"/>
+</associations>
+</Column>
+<Column name="개설일자" id="19051B9A-702B-B737-1958-3DE624DDF51B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>F8E88E09-F4C2-88C9-8457-51AA90989ADF</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60D6B7E6-3943-9BCD-967D-C3368046A776" name="개설_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49871B59-3CCE-D4BA-1D36-D03916CE8039"/>
+<colUsage columnID="1F10342F-46CF-DB9B-1692-CBECFB3B6DE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="721B4C34-BCC2-2B9A-F17A-91EB9FFB5F5C" name="개설_과목_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>5593927F-96E6-4241-9C8F-FCB32D1E7241</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49871B59-3CCE-D4BA-1D36-D03916CE8039"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74797E01-CC34-BC0C-9F74-0892B104DB3C" name="개설_강의실_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>5593927F-96E6-4241-9C8F-FCB32D1E7241</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F10342F-46CF-DB9B-1692-CBECFB3B6DE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E988927D-CE42-8B34-F809-15EBFFC5E664" name="과정">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:23:55 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="과정코드" id="1AB157A5-B217-E8F8-3E4F-EA85FF7234E8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:29:20 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="개설기간" id="28C7621C-1C86-C61A-5465-722D0FA53091">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:24:03 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="수업일수" id="FFAA9E3F-F32B-EFD8-6B71-92B4652514F7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:24:07 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="과정명" id="925A0EE7-61A1-8A6A-B59D-CF57400F34F6">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:29:16 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="수업료" id="FB3D57B4-2745-3A21-2707-8A8898361146">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:29:28 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="강의실번호" id="45CC1EF6-5452-7E73-586E-8D4C262A7E5D">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:35:10 UTC</createdTime>
+<generatorID>DE2781D1-9DC2-F083-5EF6-3FE0EFC743FC</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<referedAttribute>1855F1D1-83D6-9911-566D-CCDDCC4DCD60</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39B93843-1281-884D-B7FA-B1F59C64F64D" name="과정 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:24:18 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AB157A5-B217-E8F8-3E4F-EA85FF7234E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

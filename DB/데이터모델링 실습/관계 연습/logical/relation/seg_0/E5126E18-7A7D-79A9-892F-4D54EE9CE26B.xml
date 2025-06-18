@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="선수과목" directorySegmentName="seg_0" id="E5126E18-7A7D-79A9-892F-4D54EE9CE26B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:04:17 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>55F821C5-7187-4C56-DDFF-3B906168A93C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>55F821C5-7187-4C56-DDFF-3B906168A93C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Attribute_1" id="42F5B56A-2FA5-8667-3E9A-12E10C8C430A">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:04:21 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<engineerTo>
+<item key="8BC805A4-7ED6-D5F1-22F2-A98F8FF3F102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

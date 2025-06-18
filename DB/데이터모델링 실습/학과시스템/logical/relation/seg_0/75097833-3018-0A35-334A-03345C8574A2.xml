@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="출생" directorySegmentName="seg_0" id="75097833-3018-0A35-334A-03345C8574A2">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:04:07 UTC</createdTime>
+<ownerDesignName>학과시스템</ownerDesignName>
+<engineerTo>
+<item key="AA7EB005-C9A3-FDC1-1923-DAD3BA2EA28E" value="true"/>
+</engineerTo>
+<sourcePk>48002CF0-7013-E265-3D27-E3EF81823043</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFA249A3-6459-F175-6DDE-0F8FE32BCA23</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F0FDAC18-C020-2EAD-6032-89B2B0D6B4CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

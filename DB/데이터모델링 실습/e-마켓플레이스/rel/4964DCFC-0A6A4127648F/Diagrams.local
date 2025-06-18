@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="B864D44A-CA67-AE83-8B68-916314861C91" name="학과시스템" visible="true"/>
+   <object objectType="sub_view" objectID="1B726538-2560-4906-209F-DE49CD692B4B" name="Relational_1(2) - SubView_1" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2FB36559-6033-1307-D099-A68D69672964" name="과목">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:22:22 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="과목코드" id="16A34B5B-3ACE-A856-B4D0-07990870FA41">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:22:28 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="선수과목코드" id="F608CD2A-9707-7147-A24A-AA9590230D4B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:30:00 UTC</createdTime>
+<generatorID>25F8C46B-05D0-F0CF-1924-E6504031878F</generatorID>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>16A34B5B-3ACE-A856-B4D0-07990870FA41</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C75AB85E-C11D-8DA4-DA89-08DC28309649" name="과목 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 06:22:29 UTC</createdTime>
+<ownerDesignName>교육기관</ownerDesignName>
+<engineerTo>
+<item key="360D16AD-3CC7-2915-2239-F7A759609DD4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>16A34B5B-3ACE-A856-B4D0-07990870FA41</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

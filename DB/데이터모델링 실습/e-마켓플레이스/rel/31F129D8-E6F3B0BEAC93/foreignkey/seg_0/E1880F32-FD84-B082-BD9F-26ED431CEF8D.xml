@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1880F32-FD84-B082-BD9F-26ED431CEF8D" containerWithKeyObject="3964B10B-C73C-CDE2-F542-A2A16C6D3972" localFKIndex="9F688913-572E-FA8B-8FDB-C62F4A85E00C" name="Relation_9_견적요청_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>A7EEB99C-9B95-6644-007B-F114C39AE982</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<referredTableLongName>견적요청</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A1876FAE-C709-E250-9653-98923DC2BFE4</referredTableID>
+<keyObject>9EA620FF-F138-C166-537A-033E876F98A4</keyObject>
+<referredKeyID>9EA620FF-F138-C166-537A-033E876F98A4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>견적요청_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

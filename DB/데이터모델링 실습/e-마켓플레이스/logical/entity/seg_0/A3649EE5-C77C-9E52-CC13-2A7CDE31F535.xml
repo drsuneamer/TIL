@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A3649EE5-C77C-9E52-CC13-2A7CDE31F535" name="담당자">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:31:40 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="회원ID" id="AC5BC0A8-CC57-0B12-D9F8-2574C8D153E8">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:31:50 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="회원명" id="592C951C-BA57-311C-A08E-923C3599FA06">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:31:54 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="가입일자" id="10C6BE7E-D057-4C4A-DF94-18A9CC358A04">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:38:18 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="기업ID" id="A893A76C-1892-EDB7-7835-0D3DB0F84D0C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:34:44 UTC</createdTime>
+<generatorID>72FC5857-5496-618E-7F13-F7DB2ED3D489</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<referedAttribute>6EBA9C52-4AF5-D9E7-CCD7-4EB89A63425D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0DE45960-6882-37CD-46B5-BDC7B821C593" name="담당자 PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 05:31:53 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<engineerTo>
+<item key="31F129D8-B621-2BC2-E846-E6F3B0BEAC93" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AC5BC0A8-CC57-0B12-D9F8-2574C8D153E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

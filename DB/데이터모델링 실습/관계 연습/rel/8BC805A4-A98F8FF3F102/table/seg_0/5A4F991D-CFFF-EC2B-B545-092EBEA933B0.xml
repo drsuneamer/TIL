@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A4F991D-CFFF-EC2B-B545-092EBEA933B0" name="주문">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<ordsAlias>relation_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="주문번호" id="F0FA758B-535B-D0DE-FDBF-95759483DC8C">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:10:36 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="고객_고객번호" id="41CB3177-8B4F-E50F-DCB9-347C3B35EA6B">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8AF0531-3854-3BC6-70BD-8680AB8038DE" referredColumn="EF5C9F09-DD3D-812E-5EF3-E0006F626F16"/>
+</associations>
+</Column>
+<Column name="상품_상품번호" id="C55288A6-1A2B-AFE1-0ED3-D1A14039F5C9">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF6B179E-3ACB-2135-589E-4DEE46AE336A" referredColumn="5FD788B5-C2C5-5656-8B02-9E3EAA2FC8B4"/>
+</associations>
+</Column>
+<Column name="주문수량" id="C30349EE-3E6C-F0EC-CFA7-CF5863AE76AA">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>CB32CCA2-B675-935F-D1B8-CB18676D1C4B</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="주문일자" id="48FAC4D7-9B70-8606-DCE2-B7D378150B09">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>626AAB64-9B39-9D8B-86B9-A3320DB656A1</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CCDFFEC-956F-7F40-23F8-1C1EBBD17BB7" name="Relation_2_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<ownerDesignName>관계 연습</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0FA758B-535B-D0DE-FDBF-95759483DC8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7B506F0-8CCC-8DD4-D17C-96DB6BA76806" name="Relation_2_고객_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>6CA35322-42AB-E751-4E24-CCDBC1FEB572</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41CB3177-8B4F-E50F-DCB9-347C3B35EA6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAB58DBF-3441-3D43-64DC-08B0079C2B05" name="Relation_2_상품_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:06:04 UTC</createdTime>
+<generatorID>6CA35322-42AB-E751-4E24-CCDBC1FEB572</generatorID>
+<ownerDesignName>관계 연습</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C55288A6-1A2B-AFE1-0ED3-D1A14039F5C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

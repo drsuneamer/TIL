@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C139EC97-EFFE-6436-FAAA-7527799D3A3C" containerWithKeyObject="E8228763-B4BF-E6D1-9B73-F8826D5CAE00" localFKIndex="B021CB86-D765-391D-62E0-FD6DF1389311" name="대학원생_학생_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:12:53 UTC</createdTime>
+<generatorID>AF584BB4-801B-C073-EB81-152C18C772B5</generatorID>
+<ownerDesignName>학과시스템</ownerDesignName>
+<referredTableLongName>학생</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9392BAE2-C374-E417-BC43-89D072D3579B</referredTableID>
+<keyObject>4E233D1F-4850-36AF-ECD8-6FB2CC4CD791</keyObject>
+<referredKeyID>4E233D1F-4850-36AF-ECD8-6FB2CC4CD791</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>학생코드</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

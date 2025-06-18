@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1876FAE-C709-E250-9653-98923DC2BFE4" name="견적요청">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>CD2CC068-3D46-B16B-F445-570E14481DD4</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<ordsAlias>r</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="견적요청_ID" id="7892A012-84AB-5896-334B-A4DC0BA7F373">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="납기마갑일자" id="56C6683A-DC38-61E8-E2B5-36B25E60F8D7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>65D6F738-3278-994F-2847-493445621A0E</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="견적요청_회원ID" id="12D1AF3C-4884-28D4-2080-EAF1B40527AD">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>9362C5B0-AEF1-572E-E1DD-D8499D8F0CFC</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5ECF2C3-EE75-AB68-053D-D27422B078FD" referredColumn="414095AE-4788-6356-3566-10C491C7F976"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EA620FF-F138-C166-537A-033E876F98A4" name="견적요청_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7892A012-84AB-5896-334B-A4DC0BA7F373"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33AACE9E-EB2D-DB75-E14A-EF1E5D3BD318" name="견적요청_담당자_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-17 07:40:34 UTC</createdTime>
+<generatorID>64F31A34-D3CA-5369-C5F2-49DF76863F0D</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12D1AF3C-4884-28D4-2080-EAF1B40527AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

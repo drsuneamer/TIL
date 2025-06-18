@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A18407CD-3122-51EB-03B6-3463F97A8072" name="대학원생">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>EF26E5CF-5AC8-B82F-89FA-B134DCB03A5B</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>E8228763-B4BF-E6D1-9B73-F8826D5CAE00</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="학생_학생코드" id="F3DC021F-2580-6884-21AC-483920F5877F">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>7182E5CC-2017-A559-7D2B-B813AFDC4DED</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>BED9F573-06AB-762A-14D8-AA3637307AD7</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44310644-9CD2-D3C2-1FD7-5DFD5006C459" referredColumn="7AA9A9C9-A704-77B3-BA0E-97961FA3FA51"/>
+</associations>
+</Column>
+<Column name="취득학점" id="559B4F21-A029-D99A-405E-7F468F9CF0E7">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>5D2CC8F1-AAE2-946D-52B8-97B3C788CF11</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>39E2E1FE-6FA8-0016-889F-A0A455BEEECE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="교수_교수번호" id="4E1CF241-349C-D92A-78CE-99B35A4CEEC4">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>8A9B5C27-D32E-1F4A-84E1-EADD99936A45</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>DE2999AB-0E29-01FF-320F-34199C2D055A</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A3DFA27-1A1C-44D6-D34E-152A793481C0" referredColumn="0473F2CA-9863-A46E-FC07-D572D793B999"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED5F8DEB-4722-47AE-7B31-4B708F245020" name="대학원생_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>DD5E29C0-6997-DC0D-48EB-0A74269DFB30</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<importedID>4A44D5E8-F2D3-12C8-45C3-BC9945F72224</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3DC021F-2580-6884-21AC-483920F5877F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A86255DB-06C9-98BC-BA4E-6025FB7DE9B9" name="대학원생_학생_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>6C84DAB8-27B8-2CD9-A577-91487971C030</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3DC021F-2580-6884-21AC-483920F5877F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C22E9F5-1369-FBF2-2518-1EFC5BA84EFE" name="대학원생_교수_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-06-18 02:13:49 UTC</createdTime>
+<generatorID>63BAFB8B-01C4-9A68-0C3D-231BB3FB8C6A</generatorID>
+<ownerDesignName>e-마켓플레이스</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E1CF241-349C-D92A-78CE-99B35A4CEEC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
